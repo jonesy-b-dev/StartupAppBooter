@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,14 @@ namespace WindowsFormsApp1
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            TextWriter txt = new StreamWriter("D:/test.bat");
+            //txt.Write(textBox1.Text);
+            txt.WriteAsync(textBox1.Text);
+            txt.Close();
         }
     }
 }
