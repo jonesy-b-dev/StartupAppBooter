@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class MainUi : Form
     {
-        public Form1()
+        public MainUi()
         {
             InitializeComponent();
         }
@@ -22,10 +22,15 @@ namespace WindowsFormsApp1
         {
             MessageBox.Show("notepad will start now");
             Process ExternalProcess = new Process();
-            ExternalProcess.StartInfo.FileName = "D:/Code Projects/Python/StartupAppBooter/AppBooter";
+            ExternalProcess.StartInfo.FileName = "../StartupAppBooter/AppBooter";
             ExternalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
             ExternalProcess.Start();
             ExternalProcess.WaitForExit();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,11 @@
+D:\Code Projects\C#\StartupAppBooter\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Code Projects\C#\StartupAppBooter\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Code Projects\C#\StartupAppBooter\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Code Projects\C#\StartupAppBooter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AppBooter.csproj.AssemblyReference.cache
+D:\Code Projects\C#\StartupAppBooter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AppBooter.csproj.SuggestedBindingRedirects.cache
+D:\Code Projects\C#\StartupAppBooter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainUi.resources
+D:\Code Projects\C#\StartupAppBooter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Code Projects\C#\StartupAppBooter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AppBooter.csproj.GenerateResource.cache
+D:\Code Projects\C#\StartupAppBooter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AppBooter.csproj.CoreCompileInputs.cache
+D:\Code Projects\C#\StartupAppBooter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Code Projects\C#\StartupAppBooter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
