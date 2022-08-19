@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApp1
+﻿using System.IO;
+
+namespace WindowsFormsApp1
 {
     partial class MainUi
     {
@@ -34,6 +36,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Add = new System.Windows.Forms.Button();
+            this.ClearBtn = new System.Windows.Forms.Button();
+            this.exeField = new System.Windows.Forms.TextBox();
+            this.exeFieldTxt = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // StartApps
@@ -83,11 +88,40 @@
             this.Add.UseVisualStyleBackColor = true;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
+            // ClearBtn
+            // 
+            this.ClearBtn.Location = new System.Drawing.Point(71, 155);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Size = new System.Drawing.Size(75, 23);
+            this.ClearBtn.TabIndex = 8;
+            this.ClearBtn.Text = "Clear List";
+            this.ClearBtn.UseVisualStyleBackColor = true;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
+            // 
+            // exeField
+            // 
+            this.exeField.Location = new System.Drawing.Point(369, 98);
+            this.exeField.Name = "exeField";
+            this.exeField.Size = new System.Drawing.Size(129, 20);
+            this.exeField.TabIndex = 9;
+            // 
+            // exeFieldTxt
+            // 
+            this.exeFieldTxt.AutoSize = true;
+            this.exeFieldTxt.Location = new System.Drawing.Point(369, 80);
+            this.exeFieldTxt.Name = "exeFieldTxt";
+            this.exeFieldTxt.Size = new System.Drawing.Size(76, 13);
+            this.exeFieldTxt.TabIndex = 10;
+            this.exeFieldTxt.Text = "Enter exe here";
+            // 
             // MainUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 577);
+            this.Controls.Add(this.exeFieldTxt);
+            this.Controls.Add(this.exeField);
+            this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
@@ -108,6 +142,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.Button ClearBtn;
+        private System.Windows.Forms.TextBox exeField;
+        private System.Windows.Forms.Label exeFieldTxt;
     }
 }
 

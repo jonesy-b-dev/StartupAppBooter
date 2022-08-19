@@ -17,13 +17,14 @@ namespace WindowsFormsApp1
         public MainUi()
         {
             InitializeComponent();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("notepad will start now");
+            
             Process ExternalProcess = new Process();
-            ExternalProcess.StartInfo.FileName = "../StartupAppBooter/AppBooter";
+            ExternalProcess.StartInfo.FileName = "D:/Code Projects/C#/StartupAppBooter/AppBooter";
             ExternalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
             ExternalProcess.Start();
             ExternalProcess.WaitForExit();
@@ -36,9 +37,24 @@ namespace WindowsFormsApp1
 
         private void Add_Click(object sender, EventArgs e)
         {
-            TextWriter txt = new StreamWriter("D:/test.bat");
-            //txt.Write(textBox1.Text);
-            txt.WriteAsync(textBox1.Text);
+            if ((textBox1.Text == "" || exeField.Text == "") || (textBox1.Text == "" && exeField.Text == ""))
+            {
+                MessageBox.Show("There is a empty field");
+            }
+            else
+            {
+                TextWriter txt = new StreamWriter("D:/Code Projects/C#/StartupAppBooter/ActualAppBooter.bat");
+                txt.WriteAsync("cd " + textBox1.Text + "\n" + "start " + exeField.Text);
+                txt.Close();
+                textBox1.Clear();
+                exeField.Clear();
+            }
+        }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            TextWriter txt = new StreamWriter("D:/Code Projects/C#/StartupAppBooter/ActualAppBooter.bat");
+            txt.WriteAsync("");
             txt.Close();
         }
     }
