@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
             
             Process ExternalProcess = new Process();
             ExternalProcess.StartInfo.FileName = "D:/Code Projects/C#/StartupAppBooter/AppBooter";
-            ExternalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
+            ExternalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
             ExternalProcess.Start();
             ExternalProcess.WaitForExit();
         }
