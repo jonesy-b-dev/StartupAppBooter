@@ -39,6 +39,7 @@ namespace WindowsFormsApp1
             this.ClearBtn = new System.Windows.Forms.Button();
             this.exeField = new System.Windows.Forms.TextBox();
             this.exeFieldTxt = new System.Windows.Forms.Label();
+            this.AddedAppsList = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // StartApps
@@ -114,11 +115,21 @@ namespace WindowsFormsApp1
             this.exeFieldTxt.TabIndex = 10;
             this.exeFieldTxt.Text = "Enter exe here";
             // 
+            // AddedAppsList
+            // 
+            this.AddedAppsList.AutoSize = true;
+            this.AddedAppsList.Location = new System.Drawing.Point(663, 52);
+            this.AddedAppsList.Name = "AddedAppsList";
+            this.AddedAppsList.Size = new System.Drawing.Size(64, 13);
+            this.AddedAppsList.TabIndex = 11;
+            this.AddedAppsList.Text = "Added apps";
+            // 
             // MainUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 577);
+            this.Controls.Add(this.AddedAppsList);
             this.Controls.Add(this.exeFieldTxt);
             this.Controls.Add(this.exeField);
             this.Controls.Add(this.ClearBtn);
@@ -145,6 +156,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button ClearBtn;
         private System.Windows.Forms.TextBox exeField;
         private System.Windows.Forms.Label exeFieldTxt;
+        private System.Windows.Forms.Label AddedAppsList;
     }
 }
 
