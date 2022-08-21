@@ -40,11 +40,16 @@ namespace WindowsFormsApp1
             this.exeField = new System.Windows.Forms.TextBox();
             this.exeFieldTxt = new System.Windows.Forms.Label();
             this.AddedAppsList = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Exe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // StartApps
             // 
             this.StartApps.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.StartApps.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StartApps.Location = new System.Drawing.Point(894, 483);
             this.StartApps.Name = "StartApps";
             this.StartApps.Size = new System.Drawing.Size(162, 82);
@@ -81,6 +86,7 @@ namespace WindowsFormsApp1
             // 
             // Add
             // 
+            this.Add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Add.Location = new System.Drawing.Point(71, 125);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(75, 23);
@@ -91,6 +97,7 @@ namespace WindowsFormsApp1
             // 
             // ClearBtn
             // 
+            this.ClearBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ClearBtn.Location = new System.Drawing.Point(71, 155);
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(75, 23);
@@ -118,17 +125,51 @@ namespace WindowsFormsApp1
             // AddedAppsList
             // 
             this.AddedAppsList.AutoSize = true;
-            this.AddedAppsList.Location = new System.Drawing.Point(663, 52);
+            this.AddedAppsList.Location = new System.Drawing.Point(510, 80);
             this.AddedAppsList.Name = "AddedAppsList";
             this.AddedAppsList.Size = new System.Drawing.Size(64, 13);
             this.AddedAppsList.TabIndex = 11;
             this.AddedAppsList.Text = "Added apps";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Path,
+            this.Exe});
+            this.dataGridView1.Location = new System.Drawing.Point(513, 96);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(543, 379);
+            this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Path
+            // 
+            this.Path.HeaderText = "Path";
+            this.Path.MaxInputLength = 3276;
+            this.Path.Name = "Path";
+            this.Path.ReadOnly = true;
+            this.Path.Width = 400;
+            // 
+            // Exe
+            // 
+            this.Exe.HeaderText = "Exe";
+            this.Exe.MaxInputLength = 30;
+            this.Exe.Name = "Exe";
+            this.Exe.ReadOnly = true;
             // 
             // MainUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 577);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.AddedAppsList);
             this.Controls.Add(this.exeFieldTxt);
             this.Controls.Add(this.exeField);
@@ -138,9 +179,11 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.StartApps);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainUi";
             this.Text = "AppBooter";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,6 +200,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox exeField;
         private System.Windows.Forms.Label exeFieldTxt;
         private System.Windows.Forms.Label AddedAppsList;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Path;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Exe;
     }
 }
 
