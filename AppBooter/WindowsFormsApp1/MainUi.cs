@@ -43,9 +43,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                TextWriter txt = new StreamWriter("D:/Code Projects/C#/StartupAppBooter/ActualAppBooter.bat");
-                txt.WriteAsync("cd " + textBox1.Text + "\n" + "start " + exeField.Text);
-                txt.Close();
+                File.AppendAllText(@"D:/Code Projects/C#/StartupAppBooter/ActualAppBooter.bat", "cd " + textBox1.Text + "\n" + "start " + exeField.Text + Environment.NewLine);
                 textBox1.Clear();
                 exeField.Clear();
             }
