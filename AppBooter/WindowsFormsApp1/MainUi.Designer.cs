@@ -140,7 +140,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.StartApps);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainUi";
-            this.Text = "Form1";
+            this.Text = "AppBooter";
             this.ResumeLayout(false);
             this.PerformLayout();
 
