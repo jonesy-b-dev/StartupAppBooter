@@ -35,6 +35,9 @@ namespace WindowsFormsApp1
 
         }
 
+        string paths;
+        string exes;
+
         private void Add_Click(object sender, EventArgs e)
         {
             if ((textBox1.Text == "" || exeField.Text == "") || (textBox1.Text == "" && exeField.Text == ""))
@@ -44,19 +47,29 @@ namespace WindowsFormsApp1
             else
             {
                 File.AppendAllText(@"D:/Code Projects/C#/StartupAppBooter/ActualAppBooter.bat", "cd " + textBox1.Text + "\n" + "start " + exeField.Text + Environment.NewLine);
+                paths = paths + textBox1.Text + "\n";
+                exes = exes + exeField.Text + "\n";
+                AppListPath.Text = paths;
+                AppListExe.Text = exes;
                 textBox1.Clear();
                 exeField.Clear();
+                
             }
         }
 
+        //Clears all the apps from the boot list
         private void ClearBtn_Click(object sender, EventArgs e)
         {
             TextWriter txt = new StreamWriter("D:/Code Projects/C#/StartupAppBooter/ActualAppBooter.bat");
             txt.WriteAsync("");
+            AppListPath.Text = "";
+            AppListExe.Text = "";
+            paths = "";
+            exes = "";
             txt.Close();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void ExeLabel_Click(object sender, EventArgs e)
         {
 
         }

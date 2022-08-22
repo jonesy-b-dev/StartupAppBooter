@@ -40,10 +40,10 @@ namespace WindowsFormsApp1
             this.exeField = new System.Windows.Forms.TextBox();
             this.exeFieldTxt = new System.Windows.Forms.Label();
             this.AddedAppsList = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Exe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.AppListPath = new System.Windows.Forms.Label();
+            this.PathLabel = new System.Windows.Forms.Label();
+            this.ExeLabel = new System.Windows.Forms.Label();
+            this.AppListExe = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // StartApps
@@ -125,51 +125,58 @@ namespace WindowsFormsApp1
             // AddedAppsList
             // 
             this.AddedAppsList.AutoSize = true;
-            this.AddedAppsList.Location = new System.Drawing.Point(510, 80);
+            this.AddedAppsList.Location = new System.Drawing.Point(513, 52);
             this.AddedAppsList.Name = "AddedAppsList";
             this.AddedAppsList.Size = new System.Drawing.Size(64, 13);
             this.AddedAppsList.TabIndex = 11;
             this.AddedAppsList.Text = "Added apps";
             // 
-            // dataGridView1
+            // AppListPath
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Path,
-            this.Exe});
-            this.dataGridView1.Location = new System.Drawing.Point(513, 96);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(543, 379);
-            this.dataGridView1.TabIndex = 12;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.AppListPath.AutoSize = true;
+            this.AppListPath.Location = new System.Drawing.Point(513, 99);
+            this.AppListPath.Name = "AppListPath";
+            this.AppListPath.Size = new System.Drawing.Size(33, 13);
+            this.AppListPath.TabIndex = 12;
+            this.AppListPath.Text = "None";
             // 
-            // Path
+            // PathLabel
             // 
-            this.Path.HeaderText = "Path";
-            this.Path.MaxInputLength = 3276;
-            this.Path.Name = "Path";
-            this.Path.ReadOnly = true;
-            this.Path.Width = 400;
+            this.PathLabel.AutoSize = true;
+            this.PathLabel.Location = new System.Drawing.Point(513, 80);
+            this.PathLabel.Name = "PathLabel";
+            this.PathLabel.Size = new System.Drawing.Size(29, 13);
+            this.PathLabel.TabIndex = 13;
+            this.PathLabel.Text = "Path";
             // 
-            // Exe
+            // ExeLabel
             // 
-            this.Exe.HeaderText = "Exe";
-            this.Exe.MaxInputLength = 30;
-            this.Exe.Name = "Exe";
-            this.Exe.ReadOnly = true;
+            this.ExeLabel.AutoSize = true;
+            this.ExeLabel.Location = new System.Drawing.Point(891, 80);
+            this.ExeLabel.Name = "ExeLabel";
+            this.ExeLabel.Size = new System.Drawing.Size(25, 13);
+            this.ExeLabel.TabIndex = 14;
+            this.ExeLabel.Text = "Exe";
+            this.ExeLabel.Click += new System.EventHandler(this.ExeLabel_Click);
+            // 
+            // AppListExe
+            // 
+            this.AppListExe.AutoSize = true;
+            this.AppListExe.Location = new System.Drawing.Point(891, 99);
+            this.AppListExe.Name = "AppListExe";
+            this.AppListExe.Size = new System.Drawing.Size(33, 13);
+            this.AppListExe.TabIndex = 15;
+            this.AppListExe.Text = "None";
             // 
             // MainUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 577);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.AppListExe);
+            this.Controls.Add(this.ExeLabel);
+            this.Controls.Add(this.PathLabel);
+            this.Controls.Add(this.AppListPath);
             this.Controls.Add(this.AddedAppsList);
             this.Controls.Add(this.exeFieldTxt);
             this.Controls.Add(this.exeField);
@@ -183,7 +190,6 @@ namespace WindowsFormsApp1
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainUi";
             this.Text = "AppBooter";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,9 +206,10 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox exeField;
         private System.Windows.Forms.Label exeFieldTxt;
         private System.Windows.Forms.Label AddedAppsList;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Path;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Exe;
+        private System.Windows.Forms.Label AppListPath;
+        private System.Windows.Forms.Label PathLabel;
+        private System.Windows.Forms.Label ExeLabel;
+        private System.Windows.Forms.Label AppListExe;
     }
 }
 
