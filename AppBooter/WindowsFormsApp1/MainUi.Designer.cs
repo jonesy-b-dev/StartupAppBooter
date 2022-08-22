@@ -44,6 +44,8 @@ namespace WindowsFormsApp1
             this.PathLabel = new System.Windows.Forms.Label();
             this.ExeLabel = new System.Windows.Forms.Label();
             this.AppListExe = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ExeLabel2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // StartApps
@@ -69,11 +71,10 @@ namespace WindowsFormsApp1
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(71, 99);
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(291, 20);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 17;
             // 
             // label2
             // 
@@ -124,6 +125,7 @@ namespace WindowsFormsApp1
             // 
             // AddedAppsList
             // 
+            this.AddedAppsList.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.AddedAppsList.AutoSize = true;
             this.AddedAppsList.Location = new System.Drawing.Point(513, 52);
             this.AddedAppsList.Name = "AddedAppsList";
@@ -133,6 +135,7 @@ namespace WindowsFormsApp1
             // 
             // AppListPath
             // 
+            this.AppListPath.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.AppListPath.AutoSize = true;
             this.AppListPath.Location = new System.Drawing.Point(513, 99);
             this.AppListPath.Name = "AppListPath";
@@ -142,6 +145,7 @@ namespace WindowsFormsApp1
             // 
             // PathLabel
             // 
+            this.PathLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PathLabel.AutoSize = true;
             this.PathLabel.Location = new System.Drawing.Point(513, 80);
             this.PathLabel.Name = "PathLabel";
@@ -151,16 +155,14 @@ namespace WindowsFormsApp1
             // 
             // ExeLabel
             // 
-            this.ExeLabel.AutoSize = true;
-            this.ExeLabel.Location = new System.Drawing.Point(891, 80);
+            this.ExeLabel.Location = new System.Drawing.Point(0, 0);
             this.ExeLabel.Name = "ExeLabel";
-            this.ExeLabel.Size = new System.Drawing.Size(25, 13);
-            this.ExeLabel.TabIndex = 14;
-            this.ExeLabel.Text = "Exe";
-            this.ExeLabel.Click += new System.EventHandler(this.ExeLabel_Click);
+            this.ExeLabel.Size = new System.Drawing.Size(100, 23);
+            this.ExeLabel.TabIndex = 16;
             // 
             // AppListExe
             // 
+            this.AppListExe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AppListExe.AutoSize = true;
             this.AppListExe.Location = new System.Drawing.Point(891, 99);
             this.AppListExe.Name = "AppListExe";
@@ -168,11 +170,30 @@ namespace WindowsFormsApp1
             this.AppListExe.TabIndex = 15;
             this.AppListExe.Text = "None";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(74, 97);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(289, 20);
+            this.textBox2.TabIndex = 18;
+            // 
+            // ExeLabel2
+            // 
+            this.ExeLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExeLabel2.AutoSize = true;
+            this.ExeLabel2.Location = new System.Drawing.Point(891, 80);
+            this.ExeLabel2.Name = "ExeLabel2";
+            this.ExeLabel2.Size = new System.Drawing.Size(25, 13);
+            this.ExeLabel2.TabIndex = 19;
+            this.ExeLabel2.Text = "Exe";
+            // 
             // MainUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 577);
+            this.Controls.Add(this.ExeLabel2);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.AppListExe);
             this.Controls.Add(this.ExeLabel);
             this.Controls.Add(this.PathLabel);
@@ -187,6 +208,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label1);
             this.Controls.Add(this.StartApps);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainUi";
             this.Text = "AppBooter";
@@ -210,6 +232,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label PathLabel;
         private System.Windows.Forms.Label ExeLabel;
         private System.Windows.Forms.Label AppListExe;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label ExeLabel2;
     }
 }
 

@@ -30,10 +30,7 @@ namespace WindowsFormsApp1
             ExternalProcess.WaitForExit();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         string paths;
         string exes;
@@ -67,11 +64,6 @@ namespace WindowsFormsApp1
             paths = "";
             exes = "";
             txt.Close();
-        }
-
-        private void ExeLabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
