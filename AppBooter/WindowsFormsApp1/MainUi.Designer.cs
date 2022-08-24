@@ -33,7 +33,6 @@ namespace WindowsFormsApp1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUi));
             this.StartApps = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Add = new System.Windows.Forms.Button();
             this.ClearBtn = new System.Windows.Forms.Button();
@@ -42,10 +41,21 @@ namespace WindowsFormsApp1
             this.AddedAppsList = new System.Windows.Forms.Label();
             this.AppListPath = new System.Windows.Forms.Label();
             this.PathLabel = new System.Windows.Forms.Label();
-            this.ExeLabel = new System.Windows.Forms.Label();
             this.AppListExe = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.ExeLabel2 = new System.Windows.Forms.Label();
+            this.MenuBar = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mogusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.amonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gitHubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // StartApps
@@ -68,13 +78,6 @@ namespace WindowsFormsApp1
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Add Apps";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 17;
             // 
             // label2
             // 
@@ -153,13 +156,6 @@ namespace WindowsFormsApp1
             this.PathLabel.TabIndex = 13;
             this.PathLabel.Text = "Path";
             // 
-            // ExeLabel
-            // 
-            this.ExeLabel.Location = new System.Drawing.Point(0, 0);
-            this.ExeLabel.Name = "ExeLabel";
-            this.ExeLabel.Size = new System.Drawing.Size(100, 23);
-            this.ExeLabel.TabIndex = 16;
-            // 
             // AppListExe
             // 
             this.AppListExe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -187,6 +183,83 @@ namespace WindowsFormsApp1
             this.ExeLabel2.TabIndex = 19;
             this.ExeLabel2.Text = "Exe";
             // 
+            // MenuBar
+            // 
+            this.MenuBar.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.MenuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem1,
+            this.helpToolStripMenuItem});
+            this.MenuBar.Location = new System.Drawing.Point(0, 0);
+            this.MenuBar.Name = "MenuBar";
+            this.MenuBar.Size = new System.Drawing.Size(1068, 24);
+            this.MenuBar.TabIndex = 20;
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            // 
+            // mogusToolStripMenuItem
+            // 
+            this.mogusToolStripMenuItem.Name = "mogusToolStripMenuItem";
+            this.mogusToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            // 
+            // amonToolStripMenuItem
+            // 
+            this.amonToolStripMenuItem.Name = "amonToolStripMenuItem";
+            this.amonToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            // 
+            // fileToolStripMenuItem1
+            // 
+            this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripMenuItem1,
+            this.loadToolStripMenuItem});
+            this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
+            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem1.Text = "File";
+            // 
+            // saveToolStripMenuItem1
+            // 
+            this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem1.Text = "Save";
+            this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
+            // 
+            // loadToolStripMenuItem
+            // 
+            this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadToolStripMenuItem.Text = "Load";
+            this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gitHubToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // gitHubToolStripMenuItem
+            // 
+            this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
+            this.gitHubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gitHubToolStripMenuItem.Text = "GitHub";
+            this.gitHubToolStripMenuItem.Click += new System.EventHandler(this.gitHubToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // MainUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,7 +268,6 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.ExeLabel2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.AppListExe);
-            this.Controls.Add(this.ExeLabel);
             this.Controls.Add(this.PathLabel);
             this.Controls.Add(this.AppListPath);
             this.Controls.Add(this.AddedAppsList);
@@ -204,14 +276,17 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.StartApps);
+            this.Controls.Add(this.MenuBar);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.MenuBar;
             this.Name = "MainUi";
             this.Text = "AppBooter";
+            this.MenuBar.ResumeLayout(false);
+            this.MenuBar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,7 +296,6 @@ namespace WindowsFormsApp1
 
         private System.Windows.Forms.Button StartApps;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button ClearBtn;
@@ -230,10 +304,20 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label AddedAppsList;
         private System.Windows.Forms.Label AppListPath;
         private System.Windows.Forms.Label PathLabel;
-        private System.Windows.Forms.Label ExeLabel;
         private System.Windows.Forms.Label AppListExe;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label ExeLabel2;
+        private System.Windows.Forms.MenuStrip MenuBar;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mogusToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem amonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gitHubToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

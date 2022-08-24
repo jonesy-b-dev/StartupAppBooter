@@ -65,5 +65,27 @@ namespace WindowsFormsApp1
             AppListPath.Text = paths;
             AppListExe.Text = exes;
         }
+
+
+        //Menu toolbar
+        private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This feature is not implemented yet");
+        }
+
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This feature is not implemented yet");
+        }
+
+        private void gitHubToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This feature is not implemented yet");
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This feature is not implemented yet");
+        }
     }
 }
