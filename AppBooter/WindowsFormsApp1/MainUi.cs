@@ -80,7 +80,7 @@ namespace WindowsFormsApp1
 
         private void gitHubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This feature is not implemented yet");
+            Process.Start("https://github.com/jonesy-b-dev/StartupAppBooter");
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
