@@ -17,12 +17,10 @@ namespace WindowsFormsApp1
         public MainUi()
         {
             InitializeComponent();
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
             Process ExternalProcess = new Process();
             ExternalProcess.StartInfo.FileName = "D:/Code Projects/C#/StartupAppBooter/AppBooter";
             ExternalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
@@ -30,27 +28,20 @@ namespace WindowsFormsApp1
             ExternalProcess.WaitForExit();
         }
 
-        
-
         string paths;
         string exes;
 
         private void Add_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "" || exeField.Text == "") || (textBox1.Text == "" && exeField.Text == ""))
+            if ((textBox2.Text == "" || exeField.Text == "") || (textBox2.Text == "" && exeField.Text == ""))
             {
                 MessageBox.Show("There is a empty field");
             }
             else
             {
-                File.AppendAllText(@"D:/Code Projects/C#/StartupAppBooter/ActualAppBooter.bat", "cd " + textBox1.Text + "\n" + "start " + exeField.Text + Environment.NewLine);
-                paths = paths + textBox1.Text + "\n";
-                exes = exes + exeField.Text + "\n";
-                AppListPath.Text = paths;
-                AppListExe.Text = exes;
-                textBox1.Clear();
+                AddApp(textBox2.Text, exeField.Text, false);
+                textBox2.Clear();
                 exeField.Clear();
-                
             }
         }
 
@@ -64,6 +55,15 @@ namespace WindowsFormsApp1
             paths = "";
             exes = "";
             txt.Close();
+        }
+
+        void AddApp(string path, string exe, bool fromFile)
+        {
+            File.AppendAllText(@"D:/Code Projects/C#/StartupAppBooter/ActualAppBooter.bat", "cd " + path + "\n" + "start " + exe + Environment.NewLine);
+            paths = paths + textBox2.Text + "\n";
+            exes = exes + exeField.Text + "\n";
+            AppListPath.Text = paths;
+            AppListExe.Text = exes;
         }
     }
 }
