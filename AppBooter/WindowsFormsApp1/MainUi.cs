@@ -19,10 +19,11 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        //Startup the programms
         private void button1_Click(object sender, EventArgs e)
         {
             Process ExternalProcess = new Process();
-            ExternalProcess.StartInfo.FileName = "D:/Code Projects/C#/StartupAppBooter/AppBooter";
+            ExternalProcess.StartInfo.FileName = "AppBooter";
             ExternalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
             ExternalProcess.Start();
             ExternalProcess.WaitForExit();
@@ -48,7 +49,20 @@ namespace WindowsFormsApp1
         //Clears all the apps from the boot list
         private void ClearBtn_Click(object sender, EventArgs e)
         {
-            TextWriter txt = new StreamWriter("D:/Code Projects/C#/StartupAppBooter/ActualAppBooter.bat");
+            if (File.Exists("ActualAppBooter.bat"))
+            {
+                ClearAppList();
+            }
+            else
+            {
+                File.Create("ActualAppBooter.bat");
+                ClearAppList();
+            }
+        }
+
+        void ClearAppList()
+        {
+            TextWriter txt = new StreamWriter("ActualAppBooter.bat");
             txt.WriteAsync("");
             AppListPath.Text = "";
             AppListExe.Text = "";
@@ -59,13 +73,26 @@ namespace WindowsFormsApp1
 
         void AddApp(string path, string exe, bool fromFile)
         {
-            File.AppendAllText(@"D:/Code Projects/C#/StartupAppBooter/ActualAppBooter.bat", "cd " + path + "\n" + "start " + exe + Environment.NewLine);
+            if (File.Exists("ActualAppBooter.bat"))
+            {
+                AppToList(path, exe, fromFile);
+            }
+            else
+            {
+                File.Create("ActualAppBooter.bat");
+                AppToList(path, exe, fromFile);
+            }
+
+        }
+
+        void AppToList(string path, string exe, bool fromFile)
+        {
+            File.AppendAllText(@"ActualAppBooter.bat", "cd " + path + "\n" + "start " + exe + Environment.NewLine);
             paths = paths + textBox2.Text + "\n";
             exes = exes + exeField.Text + "\n";
             AppListPath.Text = paths;
             AppListExe.Text = exes;
         }
-
 
         //Menu toolbar
         private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
