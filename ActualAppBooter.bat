@@ -1,2 +1,0 @@
-cd asdf
-start sdfsdf

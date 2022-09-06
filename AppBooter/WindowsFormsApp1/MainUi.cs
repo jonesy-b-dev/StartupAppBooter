@@ -22,13 +22,21 @@ namespace WindowsFormsApp1
         //Startup the programms
         private void button1_Click(object sender, EventArgs e)
         {
-            Process ExternalProcess = new Process();
-            ExternalProcess.StartInfo.FileName = "AppBooter";
-            ExternalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            ExternalProcess.Start();
-            ExternalProcess.WaitForExit();
+            try
+            {
+                Process ExternalProcess = new Process();
+                ExternalProcess.StartInfo.FileName = "ActualAppBooter.bat";
+                ExternalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                ExternalProcess.Start();
+                ExternalProcess.WaitForExit();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
-
+        //"The file does not exits yet, please add a app first"
         string paths;
         string exes;
 
