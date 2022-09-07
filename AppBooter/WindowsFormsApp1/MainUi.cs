@@ -87,7 +87,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                File.Create("ActualAppBooter.bat");
+                File.Create("ActualAppBooter.bat").Close();
                 AppToList(path, exe, fromFile);
             }
 
