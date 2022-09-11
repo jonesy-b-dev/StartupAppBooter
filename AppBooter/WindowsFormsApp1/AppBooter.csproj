@@ -55,7 +55,7 @@
     <Compile Include="MainUi.Designer.cs">
       <DependentUpon>MainUi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="MainStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainUi.resx">
       <DependentUpon>MainUi.cs</DependentUpon>

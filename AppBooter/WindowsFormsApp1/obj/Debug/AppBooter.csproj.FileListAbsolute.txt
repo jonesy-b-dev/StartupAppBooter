@@ -14,11 +14,6 @@ D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\AppBoo
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\AppBooter.csproj.GenerateResource.cache
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\AppBooter.csproj.CoreCompileInputs.cache
-D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainUi.resources
 D:\Code Projects\School\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
 D:\Code Projects\School\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
@@ -31,3 +26,8 @@ D:\Code Projects\School\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug
 D:\Code Projects\School\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\AppBooter.csproj.CoreCompileInputs.cache
 D:\Code Projects\School\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\Code Projects\School\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\bin\Debug\AppBooter.exe.config
+D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\bin\Debug\AppBooter.exe
+D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\bin\Debug\AppBooter.pdb
+D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\AppBooter.exe
+D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\AppBooter.pdb

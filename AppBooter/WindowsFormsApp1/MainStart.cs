@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    internal static class Program
+    internal static class MainStart
     {
         [STAThread]
         static void Main()
