@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -22,36 +15,12 @@ namespace WindowsFormsApp1
         //Startup the programms
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Process ExternalProcess = new Process();
-                ExternalProcess.StartInfo.FileName = "ActualAppBooter.bat";
-                ExternalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                ExternalProcess.Start();
-                ExternalProcess.WaitForExit();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
+            BatFileHandler.StartUpApps();
         }
-        //"The file does not exits yet, please add a app first"
-        string paths;
-        string exes;
 
         private void Add_Click(object sender, EventArgs e)
         {
-            if ((textBox2.Text == "" || exeField.Text == "") || (textBox2.Text == "" && exeField.Text == ""))
-            {
-                MessageBox.Show("There is a empty field");
-            }
-            else
-            {
-                AddApp(textBox2.Text, exeField.Text, false);
-                textBox2.Clear();
-                exeField.Clear();
-            }
+            FileHandler.AddAppToList(textBox2, exeField, AppListPath, AppListExe);
         }
 
         //Clears all the apps from the boot list
@@ -59,47 +28,13 @@ namespace WindowsFormsApp1
         {
             if (File.Exists("ActualAppBooter.bat"))
             {
-                ClearAppList();
+                FileHandler.ClearAppList(AppListPath, AppListExe);
             }
             else
             {
                 File.Create("ActualAppBooter.bat");
-                ClearAppList();
+                FileHandler.ClearAppList(AppListPath, AppListExe);
             }
-        }
-
-        void ClearAppList()
-        {
-            TextWriter txt = new StreamWriter("ActualAppBooter.bat");
-            txt.WriteAsync("");
-            AppListPath.Text = "";
-            AppListExe.Text = "";
-            paths = "";
-            exes = "";
-            txt.Close();
-        }
-
-        void AddApp(string path, string exe, bool fromFile)
-        {
-            if (File.Exists("ActualAppBooter.bat"))
-            {
-                AppToList(path, exe, fromFile);
-            }
-            else
-            {
-                File.Create("ActualAppBooter.bat").Close();
-                AppToList(path, exe, fromFile);
-            }
-
-        }
-
-        void AppToList(string path, string exe, bool fromFile)
-        {
-            File.AppendAllText(@"ActualAppBooter.bat", "cd " + path + "\n" + "start " + exe + Environment.NewLine);
-            paths = paths + textBox2.Text + "\n";
-            exes = exes + exeField.Text + "\n";
-            AppListPath.Text = paths;
-            AppListExe.Text = exes;
         }
 
         //Menu toolbar
