@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
             this.AppListPath = new System.Windows.Forms.Label();
             this.PathLabel = new System.Windows.Forms.Label();
             this.AppListExe = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pathField = new System.Windows.Forms.TextBox();
             this.ExeLabel2 = new System.Windows.Forms.Label();
             this.MenuBar = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -132,9 +132,9 @@ namespace WindowsFormsApp1
             this.AddedAppsList.AutoSize = true;
             this.AddedAppsList.Location = new System.Drawing.Point(513, 52);
             this.AddedAppsList.Name = "AddedAppsList";
-            this.AddedAppsList.Size = new System.Drawing.Size(64, 13);
+            this.AddedAppsList.Size = new System.Drawing.Size(45, 13);
             this.AddedAppsList.TabIndex = 11;
-            this.AddedAppsList.Text = "Added apps";
+            this.AddedAppsList.Text = "App List";
             // 
             // AppListPath
             // 
@@ -166,12 +166,12 @@ namespace WindowsFormsApp1
             this.AppListExe.TabIndex = 15;
             this.AppListExe.Text = "None";
             // 
-            // textBox2
+            // pathField
             // 
-            this.textBox2.Location = new System.Drawing.Point(74, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(289, 20);
-            this.textBox2.TabIndex = 18;
+            this.pathField.Location = new System.Drawing.Point(74, 97);
+            this.pathField.Name = "pathField";
+            this.pathField.Size = new System.Drawing.Size(289, 20);
+            this.pathField.TabIndex = 18;
             // 
             // ExeLabel2
             // 
@@ -266,7 +266,7 @@ namespace WindowsFormsApp1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 577);
             this.Controls.Add(this.ExeLabel2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.pathField);
             this.Controls.Add(this.AppListExe);
             this.Controls.Add(this.PathLabel);
             this.Controls.Add(this.AppListPath);
@@ -305,7 +305,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label AppListPath;
         private System.Windows.Forms.Label PathLabel;
         private System.Windows.Forms.Label AppListExe;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox pathField;
         private System.Windows.Forms.Label ExeLabel2;
         private System.Windows.Forms.MenuStrip MenuBar;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;

@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
 
         private void Add_Click(object sender, EventArgs e)
         {
-            FileHandler.AddAppToList(textBox2, exeField, AppListPath, AppListExe);
+            FileHandler.AddAppToList(pathField, exeField, AppListPath, AppListExe);
         }
 
         //Clears all the apps from the boot list
