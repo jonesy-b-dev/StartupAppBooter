@@ -18,9 +18,12 @@ namespace WindowsFormsApp1
             }
             else
             {
+                //Checks if file exist and creates one if it doesn't exist
                 if (File.Exists("ActualAppBooter.bat"))
                 {
+                    //Add app path and exe to the bat file
                     File.AppendAllText(@"ActualAppBooter.bat", "cd " + pathField.Text + "\n" + "start " + exeField.Text + Environment.NewLine);
+                    //Add app path and exe to the UI list
                     pathList = pathList + pathField.Text + "\n";
                     exeList = exeList + exeField.Text + "\n";
                     AppListPath.Text = pathList;
@@ -29,17 +32,21 @@ namespace WindowsFormsApp1
                 else
                 {
                     File.Create("ActualAppBooter.bat").Close();
+                    //Add app path and exe to the bat file
                     File.AppendAllText(@"ActualAppBooter.bat", "cd " + pathField.Text + "\n" + "start " + exeField.Text + Environment.NewLine);
+                    //Add app path and exe to the UI list
                     pathList = pathList + pathField.Text + "\n";
                     exeList = exeList + exeField.Text + "\n";
                     AppListPath.Text = pathList;
                     AppListExe.Text = exeList;
                 }
+                //Clears the input fields
                 pathField.Clear();
                 exeField.Clear();
             }
         }
 
+        //Clears the whole bat file
         public static void ClearAppList(Label AppListPath, Label AppListExe)
         {
             TextWriter txt = new StreamWriter("ActualAppBooter.bat");
