@@ -58,6 +58,7 @@
       <DependentUpon>MainUi.cs</DependentUpon>
     </Compile>
     <Compile Include="MainStart.cs" />
+    <Compile Include="MenuStrip.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainUi.resx">
       <DependentUpon>MainUi.cs</DependentUpon>
