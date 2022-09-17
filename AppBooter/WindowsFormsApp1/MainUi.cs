@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
         private void Add_Click(object sender, EventArgs e)
         {
             FileHandler.AddAppToList(pathField, exeField, AppListPath, AppListExe);
+            FileHandler.AddAppToGroup();
         }
 
         //Clears all the apps from the boot list
@@ -63,6 +64,11 @@ namespace WindowsFormsApp1
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("AppBooter \nVersion: 0.0.1 \nCopyright © 2022- 2022 Jonas de Bruin \n\nAppBooter is a app created by Jonas de Bruin and used to boot custom apps in bulk at any time. Currently in early development");
+        }
+
+        private void SelectAppBTN_Click(object sender, EventArgs e)
+        {
+            FileHandler.AddAppToGroup();       
         }
     }
 }

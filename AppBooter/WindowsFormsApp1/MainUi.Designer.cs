@@ -55,6 +55,8 @@ namespace WindowsFormsApp1
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mogusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.amonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SelectAppBTN = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.MenuBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -260,11 +262,26 @@ namespace WindowsFormsApp1
             this.amonToolStripMenuItem.Name = "amonToolStripMenuItem";
             this.amonToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
             // 
+            // SelectAppBTN
+            // 
+            this.SelectAppBTN.Location = new System.Drawing.Point(152, 125);
+            this.SelectAppBTN.Name = "SelectAppBTN";
+            this.SelectAppBTN.Size = new System.Drawing.Size(75, 23);
+            this.SelectAppBTN.TabIndex = 21;
+            this.SelectAppBTN.Text = "Select App";
+            this.SelectAppBTN.UseVisualStyleBackColor = true;
+            this.SelectAppBTN.Click += new System.EventHandler(this.SelectAppBTN_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // MainUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 577);
+            this.Controls.Add(this.SelectAppBTN);
             this.Controls.Add(this.ExeLabel2);
             this.Controls.Add(this.pathField);
             this.Controls.Add(this.AppListExe);
@@ -318,6 +335,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gitHubToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.Button SelectAppBTN;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

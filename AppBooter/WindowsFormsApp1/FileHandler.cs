@@ -46,6 +46,27 @@ namespace WindowsFormsApp1
             }
         }
 
+        static public void AddAppToGroup()
+        {
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "exe files (*.exe)|*.exe";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = false;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = openFileDialog.FileName;
+
+                }
+            }
+        }
+
         //Clears the whole bat file
         public static void ClearAppList(Label AppListPath, Label AppListExe)
         {
