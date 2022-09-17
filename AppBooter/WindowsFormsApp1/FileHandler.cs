@@ -48,9 +48,6 @@ namespace WindowsFormsApp1
 
         static public void AddAppToGroup()
         {
-            var fileContent = string.Empty;
-            var filePath = string.Empty;
-
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.InitialDirectory = "c:\\";
@@ -61,7 +58,7 @@ namespace WindowsFormsApp1
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     //Get the path of specified file
-                    filePath = openFileDialog.FileName;
+                    pathList = openFileDialog.FileName;
 
                 }
             }

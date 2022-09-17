@@ -45,25 +45,25 @@ namespace WindowsFormsApp1
         //Exports bat file
         private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This feature is not implemented yet");
+            MenuStrip.Save();
         }
 
         //Loads a bat file
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This feature is not implemented yet");
+            MenuStrip.Load();
         }
 
         //Sends user to the GitHub page
         private void gitHubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/jonesy-b-dev/StartupAppBooter");
+            MenuStrip.GitHub();
         }
 
         //Shows user the about window
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("AppBooter \nVersion: 0.0.1 \nCopyright © 2022- 2022 Jonas de Bruin \n\nAppBooter is a app created by Jonas de Bruin and used to boot custom apps in bulk at any time. Currently in early development");
+            MenuStrip.About();
         }
 
         private void SelectAppBTN_Click(object sender, EventArgs e)
