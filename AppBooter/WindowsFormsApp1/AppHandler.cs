@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
@@ -7,8 +9,9 @@ namespace WindowsFormsApp1
 {
     internal class AppHandler
     {
-        static string pathList = "";
-        static string exeList = "";
+        static string selectedApp = "";
+
+        static List<string> appList = new List<string>();
 
         static public void OpenFileDialog()
         {
@@ -22,8 +25,8 @@ namespace WindowsFormsApp1
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     //Get the path of specified file
-                    pathList = openFileDialog.FileName;
-
+                    selectedApp = openFileDialog.FileName;
+                    appList.Add(selectedApp);
                 }
             }
         }
@@ -31,7 +34,19 @@ namespace WindowsFormsApp1
         //Clears the whole bat file
         public static void ClearAppList(Label AppListPath, Label AppListExe)
         {
+            appList.Clear();
+        }
 
+        //Run the apps
+        public static void runApps()
+        {
+            Process runAppsP = new Process();
+
+            foreach (string app in appList)
+            {
+                runAppsP.StartInfo.FileName = app;
+                runAppsP.Start();
+            }
         }
     }
 }

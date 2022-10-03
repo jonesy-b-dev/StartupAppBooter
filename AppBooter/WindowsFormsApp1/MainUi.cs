@@ -21,10 +21,15 @@ namespace WindowsFormsApp1
             label1.Text = "joe";
         }
 
+        private void SelectAppBTN_Click(object sender, EventArgs e)
+        {
+            AppHandler.OpenFileDialog();       
+        }
+
         //Startup the programms button
         private void button1_Click(object sender, EventArgs e)
         {
-
+            AppHandler.runApps();
         }
 
         //Clears all the apps from the boot list
@@ -59,9 +64,6 @@ namespace WindowsFormsApp1
             MenuStrip.About();
         }
 
-        private void SelectAppBTN_Click(object sender, EventArgs e)
-        {
-            AppHandler.OpenFileDialog();       
-        }
+        
     }
 }
