@@ -49,8 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BatFileHandler.cs" />
-    <Compile Include="FileHandler.cs" />
+    <Compile Include="AppHandler.cs" />
     <Compile Include="MainUi.cs">
       <SubType>Form</SubType>
     </Compile>

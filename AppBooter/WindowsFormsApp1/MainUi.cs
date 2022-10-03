@@ -24,28 +24,13 @@ namespace WindowsFormsApp1
         //Startup the programms button
         private void button1_Click(object sender, EventArgs e)
         {
-            BatFileHandler.StartUpApps();
-        }
 
-        //Add app button
-        private void Add_Click(object sender, EventArgs e)
-        {
-            FileHandler.AddAppToList(pathField, exeField, AppListPath, AppListExe);
         }
 
         //Clears all the apps from the boot list
         private void ClearBtn_Click(object sender, EventArgs e)
         {
-            //Checks if file exist and creates one if it doesn't
-            if (File.Exists("ActualAppBooter.bat"))
-            {
-                FileHandler.ClearAppList(AppListPath, AppListExe);
-            }
-            else
-            {
-                File.Create("ActualAppBooter.bat");
-                FileHandler.ClearAppList(AppListPath, AppListExe);
-            }
+
         }
 
         //Menu toolbar
@@ -76,7 +61,7 @@ namespace WindowsFormsApp1
 
         private void SelectAppBTN_Click(object sender, EventArgs e)
         {
-            FileHandler.OpenFileDialog();       
+            AppHandler.OpenFileDialog();       
         }
     }
 }

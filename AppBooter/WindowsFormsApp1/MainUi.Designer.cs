@@ -33,16 +33,11 @@ namespace WindowsFormsApp1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUi));
             this.StartApps = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Add = new System.Windows.Forms.Button();
             this.ClearBtn = new System.Windows.Forms.Button();
-            this.exeField = new System.Windows.Forms.TextBox();
-            this.exeFieldTxt = new System.Windows.Forms.Label();
             this.AddedAppsList = new System.Windows.Forms.Label();
             this.AppListPath = new System.Windows.Forms.Label();
             this.PathLabel = new System.Windows.Forms.Label();
             this.AppListExe = new System.Windows.Forms.Label();
-            this.pathField = new System.Windows.Forms.TextBox();
             this.ExeLabel2 = new System.Windows.Forms.Label();
             this.MenuBar = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,52 +77,16 @@ namespace WindowsFormsApp1
             this.label1.TabIndex = 4;
             this.label1.Text = "Add Apps";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(71, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Input full path to app exe or shortcut here";
-            // 
-            // Add
-            // 
-            this.Add.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add.Location = new System.Drawing.Point(71, 125);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(75, 23);
-            this.Add.TabIndex = 7;
-            this.Add.Text = "Add";
-            this.Add.UseVisualStyleBackColor = true;
-            this.Add.Click += new System.EventHandler(this.Add_Click);
-            // 
             // ClearBtn
             // 
             this.ClearBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ClearBtn.Location = new System.Drawing.Point(71, 155);
+            this.ClearBtn.Location = new System.Drawing.Point(422, 70);
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(75, 23);
             this.ClearBtn.TabIndex = 8;
             this.ClearBtn.Text = "Clear List";
             this.ClearBtn.UseVisualStyleBackColor = true;
             this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
-            // 
-            // exeField
-            // 
-            this.exeField.Location = new System.Drawing.Point(369, 98);
-            this.exeField.Name = "exeField";
-            this.exeField.Size = new System.Drawing.Size(129, 20);
-            this.exeField.TabIndex = 9;
-            // 
-            // exeFieldTxt
-            // 
-            this.exeFieldTxt.AutoSize = true;
-            this.exeFieldTxt.Location = new System.Drawing.Point(369, 80);
-            this.exeFieldTxt.Name = "exeFieldTxt";
-            this.exeFieldTxt.Size = new System.Drawing.Size(76, 13);
-            this.exeFieldTxt.TabIndex = 10;
-            this.exeFieldTxt.Text = "Enter exe here";
             // 
             // AddedAppsList
             // 
@@ -168,13 +127,6 @@ namespace WindowsFormsApp1
             this.AppListExe.Size = new System.Drawing.Size(33, 13);
             this.AppListExe.TabIndex = 15;
             this.AppListExe.Text = "None";
-            // 
-            // pathField
-            // 
-            this.pathField.Location = new System.Drawing.Point(74, 97);
-            this.pathField.Name = "pathField";
-            this.pathField.Size = new System.Drawing.Size(289, 20);
-            this.pathField.TabIndex = 18;
             // 
             // ExeLabel2
             // 
@@ -265,7 +217,7 @@ namespace WindowsFormsApp1
             // 
             // SelectAppBTN
             // 
-            this.SelectAppBTN.Location = new System.Drawing.Point(152, 125);
+            this.SelectAppBTN.Location = new System.Drawing.Point(71, 70);
             this.SelectAppBTN.Name = "SelectAppBTN";
             this.SelectAppBTN.Size = new System.Drawing.Size(75, 23);
             this.SelectAppBTN.TabIndex = 21;
@@ -294,16 +246,11 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.GroupSelect);
             this.Controls.Add(this.SelectAppBTN);
             this.Controls.Add(this.ExeLabel2);
-            this.Controls.Add(this.pathField);
             this.Controls.Add(this.AppListExe);
             this.Controls.Add(this.PathLabel);
             this.Controls.Add(this.AppListPath);
             this.Controls.Add(this.AddedAppsList);
-            this.Controls.Add(this.exeFieldTxt);
-            this.Controls.Add(this.exeField);
             this.Controls.Add(this.ClearBtn);
-            this.Controls.Add(this.Add);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.StartApps);
             this.Controls.Add(this.MenuBar);
@@ -324,16 +271,11 @@ namespace WindowsFormsApp1
 
         private System.Windows.Forms.Button StartApps;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button ClearBtn;
-        private System.Windows.Forms.TextBox exeField;
-        private System.Windows.Forms.Label exeFieldTxt;
         private System.Windows.Forms.Label AddedAppsList;
         private System.Windows.Forms.Label AppListPath;
         private System.Windows.Forms.Label PathLabel;
         private System.Windows.Forms.Label AppListExe;
-        private System.Windows.Forms.TextBox pathField;
         private System.Windows.Forms.Label ExeLabel2;
         private System.Windows.Forms.MenuStrip MenuBar;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
