@@ -57,6 +57,7 @@ namespace WindowsFormsApp1
             this.amonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectAppBTN = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.GroupSelect = new System.Windows.Forms.ComboBox();
             this.MenuBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -208,14 +209,14 @@ namespace WindowsFormsApp1
             // saveToolStripMenuItem1
             // 
             this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
-            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
             this.saveToolStripMenuItem1.Text = "Save";
             this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
@@ -276,11 +277,21 @@ namespace WindowsFormsApp1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // GroupSelect
+            // 
+            this.GroupSelect.FormattingEnabled = true;
+            this.GroupSelect.Location = new System.Drawing.Point(71, 184);
+            this.GroupSelect.Name = "GroupSelect";
+            this.GroupSelect.Size = new System.Drawing.Size(121, 21);
+            this.GroupSelect.TabIndex = 22;
+            this.GroupSelect.Text = "Select Group";
+            // 
             // MainUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 577);
+            this.Controls.Add(this.GroupSelect);
             this.Controls.Add(this.SelectAppBTN);
             this.Controls.Add(this.ExeLabel2);
             this.Controls.Add(this.pathField);
@@ -337,6 +348,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button SelectAppBTN;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ComboBox GroupSelect;
     }
 }
 

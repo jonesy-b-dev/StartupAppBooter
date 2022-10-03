@@ -11,6 +11,15 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        
+        public void GetSettings()
+        {
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            label1.Text = "joe";
+        }
 
         //Startup the programms button
         private void button1_Click(object sender, EventArgs e)
@@ -22,7 +31,6 @@ namespace WindowsFormsApp1
         private void Add_Click(object sender, EventArgs e)
         {
             FileHandler.AddAppToList(pathField, exeField, AppListPath, AppListExe);
-            FileHandler.AddAppToGroup();
         }
 
         //Clears all the apps from the boot list
@@ -68,7 +76,7 @@ namespace WindowsFormsApp1
 
         private void SelectAppBTN_Click(object sender, EventArgs e)
         {
-            FileHandler.AddAppToGroup();       
+            FileHandler.OpenFileDialog();       
         }
     }
 }
