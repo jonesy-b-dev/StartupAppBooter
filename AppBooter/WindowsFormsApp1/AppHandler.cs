@@ -28,16 +28,17 @@ namespace WindowsFormsApp1
                     //Get the path of specified file
                     selectedApp = openFileDialog.FileName;
                     appList.Add(selectedApp);
-                    appListTemp += "\n" + selectedApp;
+                    appListTemp += selectedApp + "\n";
                     pathField.Text = appListTemp;
                 }
             }
         }
 
         //Clears the whole app list
-        public static void ClearAppList(Label AppListPath, Label AppListExe)
+        public static void ClearAppList(Label AppListPath)
         {
             appList.Clear();
+            AppListPath.Text = "";
         }
 
         //Run the apps

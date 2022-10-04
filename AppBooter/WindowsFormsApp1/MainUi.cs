@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
         //Clears all the apps from the boot list
         private void ClearBtn_Click(object sender, EventArgs e)
         {
-
+            AppHandler.ClearAppList(AppListPath);
         }
 
         //Menu toolbar

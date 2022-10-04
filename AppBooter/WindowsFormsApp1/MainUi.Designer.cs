@@ -78,9 +78,9 @@ namespace WindowsFormsApp1
             // ClearBtn
             // 
             this.ClearBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ClearBtn.Location = new System.Drawing.Point(422, 70);
+            this.ClearBtn.Location = new System.Drawing.Point(396, 75);
             this.ClearBtn.Name = "ClearBtn";
-            this.ClearBtn.Size = new System.Drawing.Size(75, 23);
+            this.ClearBtn.Size = new System.Drawing.Size(97, 37);
             this.ClearBtn.TabIndex = 8;
             this.ClearBtn.Text = "Clear List";
             this.ClearBtn.UseVisualStyleBackColor = true;
@@ -195,9 +195,10 @@ namespace WindowsFormsApp1
             // 
             // SelectAppBTN
             // 
-            this.SelectAppBTN.Location = new System.Drawing.Point(71, 70);
+            this.SelectAppBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SelectAppBTN.Location = new System.Drawing.Point(74, 75);
             this.SelectAppBTN.Name = "SelectAppBTN";
-            this.SelectAppBTN.Size = new System.Drawing.Size(75, 23);
+            this.SelectAppBTN.Size = new System.Drawing.Size(97, 37);
             this.SelectAppBTN.TabIndex = 21;
             this.SelectAppBTN.Text = "Select App";
             this.SelectAppBTN.UseVisualStyleBackColor = true;
@@ -210,7 +211,7 @@ namespace WindowsFormsApp1
             // GroupSelect
             // 
             this.GroupSelect.FormattingEnabled = true;
-            this.GroupSelect.Location = new System.Drawing.Point(71, 184);
+            this.GroupSelect.Location = new System.Drawing.Point(25, 544);
             this.GroupSelect.Name = "GroupSelect";
             this.GroupSelect.Size = new System.Drawing.Size(121, 21);
             this.GroupSelect.TabIndex = 22;
