@@ -37,8 +37,6 @@ namespace WindowsFormsApp1
             this.AddedAppsList = new System.Windows.Forms.Label();
             this.AppListPath = new System.Windows.Forms.Label();
             this.PathLabel = new System.Windows.Forms.Label();
-            this.AppListExe = new System.Windows.Forms.Label();
-            this.ExeLabel2 = new System.Windows.Forms.Label();
             this.MenuBar = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -117,26 +115,6 @@ namespace WindowsFormsApp1
             this.PathLabel.Size = new System.Drawing.Size(29, 13);
             this.PathLabel.TabIndex = 13;
             this.PathLabel.Text = "Path";
-            // 
-            // AppListExe
-            // 
-            this.AppListExe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AppListExe.AutoSize = true;
-            this.AppListExe.Location = new System.Drawing.Point(891, 99);
-            this.AppListExe.Name = "AppListExe";
-            this.AppListExe.Size = new System.Drawing.Size(33, 13);
-            this.AppListExe.TabIndex = 15;
-            this.AppListExe.Text = "None";
-            // 
-            // ExeLabel2
-            // 
-            this.ExeLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ExeLabel2.AutoSize = true;
-            this.ExeLabel2.Location = new System.Drawing.Point(891, 80);
-            this.ExeLabel2.Name = "ExeLabel2";
-            this.ExeLabel2.Size = new System.Drawing.Size(25, 13);
-            this.ExeLabel2.TabIndex = 19;
-            this.ExeLabel2.Text = "Exe";
             // 
             // MenuBar
             // 
@@ -245,8 +223,6 @@ namespace WindowsFormsApp1
             this.ClientSize = new System.Drawing.Size(1068, 577);
             this.Controls.Add(this.GroupSelect);
             this.Controls.Add(this.SelectAppBTN);
-            this.Controls.Add(this.ExeLabel2);
-            this.Controls.Add(this.AppListExe);
             this.Controls.Add(this.PathLabel);
             this.Controls.Add(this.AppListPath);
             this.Controls.Add(this.AddedAppsList);
@@ -275,8 +251,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label AddedAppsList;
         private System.Windows.Forms.Label AppListPath;
         private System.Windows.Forms.Label PathLabel;
-        private System.Windows.Forms.Label AppListExe;
-        private System.Windows.Forms.Label ExeLabel2;
         private System.Windows.Forms.MenuStrip MenuBar;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;

@@ -10,10 +10,11 @@ namespace WindowsFormsApp1
     internal class AppHandler
     {
         static string selectedApp = "";
+        static string appListTemp;
 
         static List<string> appList = new List<string>();
 
-        static public void OpenFileDialog()
+        static public void OpenFileDialog(Label pathField)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -27,11 +28,13 @@ namespace WindowsFormsApp1
                     //Get the path of specified file
                     selectedApp = openFileDialog.FileName;
                     appList.Add(selectedApp);
+                    appListTemp += "\n" + selectedApp;
+                    pathField.Text = appListTemp;
                 }
             }
         }
 
-        //Clears the whole bat file
+        //Clears the whole app list
         public static void ClearAppList(Label AppListPath, Label AppListExe)
         {
             appList.Clear();

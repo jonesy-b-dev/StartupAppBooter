@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
 
         private void SelectAppBTN_Click(object sender, EventArgs e)
         {
-            AppHandler.OpenFileDialog();       
+            AppHandler.OpenFileDialog(AppListPath);       
         }
 
         //Startup the programms button
