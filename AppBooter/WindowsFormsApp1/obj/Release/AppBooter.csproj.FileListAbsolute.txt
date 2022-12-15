@@ -1,7 +1,6 @@
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Release\AppBooter.csproj.AssemblyReference.cache
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Release\AppBooter.csproj.SuggestedBindingRedirects.cache
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Release\WindowsFormsApp1.MainUi.resources
-D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Properties.Resources.resources
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Release\AppBooter.csproj.GenerateResource.cache
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Release\AppBooter.csproj.CoreCompileInputs.cache
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\bin\Release\AppBooter.exe.config
@@ -9,3 +8,4 @@ D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\bin\Release\AppB
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\bin\Release\AppBooter.pdb
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Release\AppBooter.exe
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Release\AppBooter.pdb
+D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Properties.Resources.resources

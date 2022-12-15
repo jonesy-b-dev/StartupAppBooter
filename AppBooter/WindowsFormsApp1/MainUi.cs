@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
 
         protected override void OnLoad(EventArgs e)
         {
-            label1.Text = "joe";
+
         }
 
         private void SelectAppBTN_Click(object sender, EventArgs e)
