@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
         }
 
         //Startup the programms button
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             AppHandler.runApps();
         }
@@ -41,25 +41,25 @@ namespace WindowsFormsApp1
         //Menu toolbar
 
         //Exports bat file
-        private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void SaveToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             MenuStrip.Save();
         }
 
         //Loads a bat file
-        private void loadToolStripMenuItem_Click(object sender, EventArgs e)
+        private void LoadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MenuStrip.Load();
         }
 
         //Sends user to the GitHub page
-        private void gitHubToolStripMenuItem_Click(object sender, EventArgs e)
+        private void GitHubToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MenuStrip.GitHub();
         }
 
         //Shows user the about window
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MenuStrip.About();
         }
