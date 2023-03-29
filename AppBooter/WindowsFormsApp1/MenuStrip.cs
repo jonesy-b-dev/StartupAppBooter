@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog
             {
-                Filter = "booter Files|*.booter",
+                Filter = "Booter Files|*.booter",
                 Title = "Save selected programs",
                 InitialDirectory = @"C:\",
                 FileName = "savedProgramms.booter"
@@ -48,7 +48,7 @@ namespace WindowsFormsApp1
             {
                 Title = "Load selected programs",
                 InitialDirectory = @"C:\",
-                Filter = "booter Files|*.booter"
+                Filter = "Booter Files|*.booter"
             };
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)

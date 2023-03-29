@@ -27,7 +27,6 @@ namespace WindowsFormsApp1
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     //Get the path of specified file and add it to the list
-                    appListTemp = "";
                     selectedApp = openFileDialog.FileName;
                     appList.Add(selectedApp);
                     appListTemp += selectedApp + "\n";
@@ -42,7 +41,8 @@ namespace WindowsFormsApp1
             if (AppListPath.Text != "None")
             {
                 appList.Clear();
-                AppListPath.Text = "";
+                appListTemp = "";
+                AppListPath.Text = "None";
             }
         }
 
