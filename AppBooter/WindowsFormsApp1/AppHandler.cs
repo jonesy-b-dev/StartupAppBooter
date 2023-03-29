@@ -39,8 +39,11 @@ namespace WindowsFormsApp1
         //Clears the whole app list
         public static void ClearAppList(Label AppListPath)
         {
-            appList.Clear();
-            AppListPath.Text = "";
+            if (AppListPath.Text != "None")
+            {
+                appList.Clear();
+                AppListPath.Text = "";
+            }
         }
 
         //Run the apps
