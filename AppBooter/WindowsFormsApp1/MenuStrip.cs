@@ -12,13 +12,16 @@ namespace WindowsFormsApp1
 {
     internal class MenuStrip
     {
+        //Saves a txt and writes all the selected apps to it
         static public void Save()
         {
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Text Files|*.txt";
-            saveFileDialog1.Title = "Save a Text File";
-            saveFileDialog1.InitialDirectory = @"C:\";
-            saveFileDialog1.FileName = "savedProgramms.txt";
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog
+            {
+                Filter = "Text Files|*.txt",
+                Title = "Save selected programs",
+                InitialDirectory = @"C:\",
+                FileName = "savedProgramms.txt"
+            };
 
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -32,7 +35,7 @@ namespace WindowsFormsApp1
 
                     writer.Close();
 
-                    MessageBox.Show("Your file has been saved to!");
+                    MessageBox.Show("Your file has been saved!");
                 }
             }
         }
