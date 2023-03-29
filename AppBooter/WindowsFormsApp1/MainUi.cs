@@ -14,6 +14,7 @@ namespace WindowsFormsApp1
         
         public void GetSettings()
         {
+
         }
 
         protected override void OnLoad(EventArgs e)
@@ -23,7 +24,7 @@ namespace WindowsFormsApp1
 
         private void SelectAppBTN_Click(object sender, EventArgs e)
         {
-            AppHandler.OpenFileDialog(AppListPath);       
+            AppHandler.OpenFileDialog(AppListPath);
         }
 
         //Startup the programms button
@@ -49,7 +50,7 @@ namespace WindowsFormsApp1
         //Loads a bat file
         private void LoadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MenuStrip.Load();
+            MenuStrip.Load(AppListPath);
         }
 
         //Sends user to the GitHub page

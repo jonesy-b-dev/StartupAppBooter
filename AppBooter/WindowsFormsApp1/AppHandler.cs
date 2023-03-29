@@ -10,7 +10,8 @@ namespace WindowsFormsApp1
     internal class AppHandler
     {
         static string selectedApp = "";
-        static string appListTemp;
+        static public string appListTemp;
+
 
         public static List<string> appList = new List<string>();
 
@@ -21,11 +22,11 @@ namespace WindowsFormsApp1
                 openFileDialog.InitialDirectory = "c:\\";
                 openFileDialog.Filter = "exe files (*.exe)|*.exe";
                 openFileDialog.FilterIndex = 2;
-                openFileDialog.RestoreDirectory = true;
+                openFileDialog.RestoreDirectory = false;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    //Get the path of specified file
+                    //Get the path of specified file and add it to the list
                     appListTemp = "";
                     selectedApp = openFileDialog.FileName;
                     appList.Add(selectedApp);
