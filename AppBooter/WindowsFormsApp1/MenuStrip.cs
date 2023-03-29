@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace WindowsFormsApp1
 {
@@ -12,7 +14,27 @@ namespace WindowsFormsApp1
     {
         static public void Save()
         {
-            MessageBox.Show("This feature is not implemented yet");
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Text Files|*.txt";
+            saveFileDialog1.Title = "Save a Text File";
+            saveFileDialog1.InitialDirectory = @"C:\";
+            saveFileDialog1.FileName = "savedProgramms.txt";
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // Open the file for writing
+                using (StreamWriter writer = new StreamWriter(saveFileDialog1.FileName))
+                {
+                    foreach (string app in AppHandler.appList)
+                    {
+                        writer.WriteLine(app);
+                    }
+
+                    writer.Close();
+
+                    MessageBox.Show("Your file has been saved to!");
+                }
+            }
         }
 
         static public void Load()
