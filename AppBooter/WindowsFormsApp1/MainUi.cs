@@ -64,7 +64,5 @@ namespace WindowsFormsApp1
         {
             MenuStrip.About();
         }
-
-        
     }
 }

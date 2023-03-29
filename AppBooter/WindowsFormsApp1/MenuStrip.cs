@@ -17,10 +17,10 @@ namespace WindowsFormsApp1
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog
             {
-                Filter = "Text Files|*.txt",
+                Filter = "Booter Files|*.booter",
                 Title = "Save selected programs",
                 InitialDirectory = @"C:\",
-                FileName = "savedProgramms.txt"
+                FileName = "savedProgramms.booter"
             };
 
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
@@ -48,8 +48,7 @@ namespace WindowsFormsApp1
             {
                 Title = "Load selected programs",
                 InitialDirectory = @"C:\",
-                FileName = "savedProgramms.txt",
-                Filter = "Text Files|*.txt"
+                Filter = "Booter Files|*.booter"
             };
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -61,7 +60,7 @@ namespace WindowsFormsApp1
                     AppHandler.appList.Add(line);
                 }
                 AppListPath.Text = AppHandler.appListTemp;
-                MessageBox.Show("Your apps has been successfully loaded!");
+            MessageBox.Show("Your apps has been successfully loaded!");
             }
 
         }
