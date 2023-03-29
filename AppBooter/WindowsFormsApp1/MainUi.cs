@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
         //Startup the programms button
         private void Button1_Click(object sender, EventArgs e)
         {
-            AppHandler.runApps();
+            AppHandler.RunApps();
         }
 
         //Clears all the apps from the boot list

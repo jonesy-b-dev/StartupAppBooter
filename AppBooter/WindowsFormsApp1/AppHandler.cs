@@ -21,11 +21,12 @@ namespace WindowsFormsApp1
                 openFileDialog.InitialDirectory = "c:\\";
                 openFileDialog.Filter = "exe files (*.exe)|*.exe";
                 openFileDialog.FilterIndex = 2;
-                openFileDialog.RestoreDirectory = false;
+                openFileDialog.RestoreDirectory = true;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     //Get the path of specified file
+                    appListTemp = "";
                     selectedApp = openFileDialog.FileName;
                     appList.Add(selectedApp);
                     appListTemp += selectedApp + "\n";
@@ -42,7 +43,7 @@ namespace WindowsFormsApp1
         }
 
         //Run the apps
-        public static void runApps()
+        public static void RunApps()
         {
             Process runAppsP = new Process();
 
