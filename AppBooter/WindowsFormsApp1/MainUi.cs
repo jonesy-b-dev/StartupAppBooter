@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using WindowsFormsApp1.Properties;
 
 namespace WindowsFormsApp1
 {
@@ -9,6 +10,13 @@ namespace WindowsFormsApp1
         public MainUi()
         {
             InitializeComponent();
+            LoadSettings();
+            this.MenuBar.Renderer = new CustomMenuStripRenderer();
+        }
+
+         ~MainUi()
+        {
+            Settings.Default.Save();
         }
 
         public void GetSettings()
@@ -66,21 +74,56 @@ namespace WindowsFormsApp1
 
         private void darkToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BackColor = Color.FromArgb(50, 50, 50);
-            label1.ForeColor = Color.FromArgb(255, 255, 255);
-            AddedAppsList.ForeColor = Color.FromArgb(255, 255, 255);
-            PathLabel.ForeColor = Color.FromArgb(255, 255, 255);
-            AppListPath.ForeColor = Color.FromArgb(255, 255, 255);
+            DarkTheme();
+        }
 
+        private void DarkTheme()
+        {
+            Settings.Default.darkTheme = true;
+            Settings.Default.Save();
+            
+            MenuBar.BackColor = Color.FromArgb(20, 20, 20);
+            MenuBar.ForeColor = Color.White;
+            fileToolStripMenuItem1.BackColor = Color.FromArgb(20, 20, 20);
+
+
+            BackColor = Color.FromArgb(50, 50, 50);
+            label1.ForeColor = Color.White;
+            AddedAppsList.ForeColor = Color.White;
+            PathLabel.ForeColor = Color.White;
+            AppListPath.ForeColor = Color.White;
         }
 
         private void lightToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            LightTheme();
+        }
+
+        private void LightTheme()
+        {
+            Settings.Default.darkTheme = false;
+            Settings.Default.Save();
+
             BackColor = DefaultBackColor;
             label1.ForeColor = DefaultForeColor;
             AddedAppsList.ForeColor = DefaultForeColor;
             PathLabel.ForeColor = DefaultForeColor;
             AppListPath.ForeColor = DefaultForeColor;
         }
+
+        private void LoadSettings()
+        {
+            AddedAppsList.Text = "Loaded";
+            if (Settings.Default.darkTheme == true)
+            {
+                DarkTheme();
+            }
+            else
+            {
+                LightTheme();
+            }
+        }
     }
+
+    
 }

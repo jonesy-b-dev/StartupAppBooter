@@ -135,24 +135,28 @@ namespace WindowsFormsApp1
             // 
             // fileToolStripMenuItem1
             // 
+            this.fileToolStripMenuItem1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveToolStripMenuItem1,
             this.loadToolStripMenuItem});
+            this.fileToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
             this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem1.Text = "File";
             // 
             // saveToolStripMenuItem1
             // 
+            this.saveToolStripMenuItem1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
-            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem1.Text = "Save";
             this.saveToolStripMenuItem1.Click += new System.EventHandler(this.SaveToolStripMenuItem1_Click);
             // 
             // loadToolStripMenuItem
             // 
+            this.loadToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.LoadToolStripMenuItem_Click);
             // 
@@ -168,14 +172,14 @@ namespace WindowsFormsApp1
             // gitHubToolStripMenuItem
             // 
             this.gitHubToolStripMenuItem.Name = "gitHubToolStripMenuItem";
-            this.gitHubToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.gitHubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gitHubToolStripMenuItem.Text = "GitHub";
             this.gitHubToolStripMenuItem.Click += new System.EventHandler(this.GitHubToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -233,7 +237,7 @@ namespace WindowsFormsApp1
             // SelectAppBTN
             // 
             this.SelectAppBTN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SelectAppBTN.Location = new System.Drawing.Point(74, 75);
+            this.SelectAppBTN.Location = new System.Drawing.Point(74, 87);
             this.SelectAppBTN.Name = "SelectAppBTN";
             this.SelectAppBTN.Size = new System.Drawing.Size(97, 37);
             this.SelectAppBTN.TabIndex = 21;
