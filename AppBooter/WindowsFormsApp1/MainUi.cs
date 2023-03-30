@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
-using System.IO;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -11,7 +10,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-        
+
         public void GetSettings()
         {
 
@@ -63,6 +62,25 @@ namespace WindowsFormsApp1
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MenuStrip.About();
+        }
+
+        private void darkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackColor = Color.FromArgb(50, 50, 50);
+            label1.ForeColor = Color.FromArgb(255, 255, 255);
+            AddedAppsList.ForeColor = Color.FromArgb(255, 255, 255);
+            PathLabel.ForeColor = Color.FromArgb(255, 255, 255);
+            AppListPath.ForeColor = Color.FromArgb(255, 255, 255);
+
+        }
+
+        private void lightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackColor = DefaultBackColor;
+            label1.ForeColor = DefaultForeColor;
+            AddedAppsList.ForeColor = DefaultForeColor;
+            PathLabel.ForeColor = DefaultForeColor;
+            AppListPath.ForeColor = DefaultForeColor;
         }
     }
 }

@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
-using System.Runtime.InteropServices.ComTypes;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -60,7 +55,7 @@ namespace WindowsFormsApp1
                     AppHandler.appList.Add(line);
                 }
                 AppListPath.Text = AppHandler.appListTemp;
-            MessageBox.Show("Your apps has been successfully loaded!");
+                MessageBox.Show("Your apps has been successfully loaded!");
             }
 
         }
