@@ -11,7 +11,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             LoadSettings();
-            this.MenuBar.Renderer = new CustomMenuStripRenderer();
         }
 
          ~MainUi()
@@ -79,12 +78,25 @@ namespace WindowsFormsApp1
 
         private void DarkTheme()
         {
+            this.MenuBar.Renderer = new DarkThemeRenderer();
+
             Settings.Default.darkTheme = true;
             Settings.Default.Save();
             
+
+            //Menu Strip
             MenuBar.BackColor = Color.FromArgb(20, 20, 20);
             MenuBar.ForeColor = Color.White;
             fileToolStripMenuItem1.BackColor = Color.FromArgb(20, 20, 20);
+            fileToolStripMenuItem1.ForeColor = Color.White;
+            saveToolStripMenuItem1.ForeColor = Color.White;
+            loadToolStripMenuItem.ForeColor = Color.White;
+            gitHubToolStripMenuItem.ForeColor = Color.White;
+            aboutToolStripMenuItem.ForeColor = Color.White;
+            themeToolStripMenuItem.ForeColor = Color.White;
+            darkToolStripMenuItem.ForeColor = Color.White;
+            lightToolStripMenuItem.ForeColor = Color.White;
+
 
 
             BackColor = Color.FromArgb(50, 50, 50);
@@ -92,6 +104,8 @@ namespace WindowsFormsApp1
             AddedAppsList.ForeColor = Color.White;
             PathLabel.ForeColor = Color.White;
             AppListPath.ForeColor = Color.White;
+            SelectAppBTN.BackColor = Color.DimGray;
+
         }
 
         private void lightToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,9 +115,25 @@ namespace WindowsFormsApp1
 
         private void LightTheme()
         {
+            this.MenuBar.Renderer = new LightThemeRenderer();
+
             Settings.Default.darkTheme = false;
             Settings.Default.Save();
 
+            //Menu Strip
+            MenuBar.BackColor = Color.White;
+            MenuBar.ForeColor = DefaultForeColor;
+            fileToolStripMenuItem1.BackColor = Color.White;
+            fileToolStripMenuItem1.ForeColor = DefaultForeColor;
+            saveToolStripMenuItem1.ForeColor = DefaultForeColor;
+            loadToolStripMenuItem.ForeColor = DefaultForeColor;
+            gitHubToolStripMenuItem.ForeColor = DefaultForeColor;
+            aboutToolStripMenuItem.ForeColor = DefaultForeColor;
+            themeToolStripMenuItem.ForeColor = DefaultForeColor;
+            darkToolStripMenuItem.ForeColor = DefaultForeColor;
+            lightToolStripMenuItem.ForeColor = DefaultForeColor;
+
+            //UI
             BackColor = DefaultBackColor;
             label1.ForeColor = DefaultForeColor;
             AddedAppsList.ForeColor = DefaultForeColor;

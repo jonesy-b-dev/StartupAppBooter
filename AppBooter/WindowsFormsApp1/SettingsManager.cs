@@ -9,55 +9,55 @@ namespace WindowsFormsApp1
     }
 
 
-    internal class CustomMenuStripRenderer : ToolStripProfessionalRenderer
+    internal class DarkThemeRenderer : ToolStripProfessionalRenderer
     {
-        public CustomMenuStripRenderer() : base(new Themes()) { }
+        public DarkThemeRenderer() : base(new DarkTheme()) { }
     }
 
-    public class Themes : ProfessionalColorTable
+    public class DarkTheme : ProfessionalColorTable
     {
-        /// Gets the starting color of the gradient used when 
-        /// a top-level System.Windows.Forms.ToolStripMenuItem is pressed.
+        // Gets the starting color of the gradient used when 
         public override Color MenuItemPressedGradientBegin => Color.FromArgb(30, 30, 30);
 
-        /// Gets the end color of the gradient used when a top-level 
-        /// System.Windows.Forms.ToolStripMenuItem is pressed.
+        // Gets the end color of the gradient used when a top-level 
         public override Color MenuItemPressedGradientEnd => Color.FromArgb(30, 30, 30);
 
-        /// Gets the border color to use with a 
-        /// System.Windows.Forms.ToolStripMenuItem.
-        public override Color MenuItemBorder => Color.DarkGray;
-
-        /// Gets the starting color of the gradient used when the 
-        /// System.Windows.Forms.ToolStripMenuItem is selected.
-        public override Color MenuItemSelectedGradientBegin => Color.FromArgb(30, 30, 30);
-
-        /// Gets the end color of the gradient used when the 
-        /// System.Windows.Forms.ToolStripMenuItem is selected.
-        public override Color MenuItemSelectedGradientEnd => Color.FromArgb(30, 30, 30);
-
-        /// Gets the solid background color of the 
-        /// System.Windows.Forms.ToolStripDropDown.
+        // Gets the solid background color of the 
         public override Color ToolStripDropDownBackground => Color.FromArgb(30, 30, 30);
+        
+        // Gets the starting color of the gradient used in the //image 
+        public override Color ImageMarginGradientBegin => Color.FromArgb(40, 40, 40);
+        
+        // Gets the middle color of the gradient used in the //image 
+        public override Color ImageMarginGradientMiddle => Color.FromArgb(40, 40, 30);
+        
+        // Gets the end color of the gradient used in the image 
+        public override Color ImageMarginGradientEnd => Color.FromArgb(40, 40, 40);
+    }
 
-        /// Gets the starting color of the gradient used in the image 
-        /// margin of a System.Windows.Forms.ToolStripDropDownMenu.
-        public override Color ImageMarginGradientBegin => Color.DimGray;
+    internal class LightThemeRenderer : ToolStripProfessionalRenderer
+    {
+        public LightThemeRenderer() : base(new LightTheme()) { }
+    }
 
-        /// Gets the middle color of the gradient used in the image 
-        /// margin of a System.Windows.Forms.ToolStripDropDownMenu.
-        public override Color ImageMarginGradientMiddle => Color.DimGray;
+    public class LightTheme : ProfessionalColorTable
+    {
+        // Gets the starting color of the gradient used when 
+        public override Color MenuItemPressedGradientBegin => default;
 
-        /// Gets the end color of the gradient used in the image 
-        /// margin of a System.Windows.Forms.ToolStripDropDownMenu.
-        public override Color ImageMarginGradientEnd => Color.DimGray;
+        // Gets the end color of the gradient used when a top-level 
+        public override Color MenuItemPressedGradientEnd => default;
 
-        /// Gets the color to use to for shadow effects on 
-        /// the System.Windows.Forms.ToolStripSeparator.
-        public override Color SeparatorDark => Color.Black;
+        // Gets the solid background color of the 
+        public override Color ToolStripDropDownBackground => default;
 
-        /// Gets the color that is the border color to use 
-        /// on a System.Windows.Forms.MenuStrip.
-        public override Color MenuBorder => Color.DarkGray;
+        // Gets the starting color of the gradient used in the //image 
+        public override Color ImageMarginGradientBegin => default;
+
+        // Gets the middle color of the gradient used in the //image 
+        public override Color ImageMarginGradientMiddle => default;
+
+        // Gets the end color of the gradient used in the image 
+        public override Color ImageMarginGradientEnd => default;
     }
 }

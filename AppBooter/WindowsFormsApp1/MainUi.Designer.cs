@@ -83,7 +83,7 @@ namespace WindowsFormsApp1
             // ClearBtn
             // 
             this.ClearBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ClearBtn.Location = new System.Drawing.Point(396, 75);
+            this.ClearBtn.Location = new System.Drawing.Point(397, 87);
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(97, 37);
             this.ClearBtn.TabIndex = 8;
@@ -146,7 +146,8 @@ namespace WindowsFormsApp1
             // 
             // saveToolStripMenuItem1
             // 
-            this.saveToolStripMenuItem1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.saveToolStripMenuItem1.BackColor = System.Drawing.SystemColors.Control;
+            this.saveToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
             this.saveToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem1.Text = "Save";
@@ -154,7 +155,7 @@ namespace WindowsFormsApp1
             // 
             // loadToolStripMenuItem
             // 
-            this.loadToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.loadToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
             this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loadToolStripMenuItem.Text = "Load";
