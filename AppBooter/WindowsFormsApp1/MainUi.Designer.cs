@@ -206,14 +206,14 @@ namespace WindowsFormsApp1
             this.darkToolStripMenuItem.Name = "darkToolStripMenuItem";
             this.darkToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.darkToolStripMenuItem.Text = "Dark";
-            this.darkToolStripMenuItem.Click += new System.EventHandler(this.darkToolStripMenuItem_Click);
+            this.darkToolStripMenuItem.Click += new System.EventHandler(this.DarkToolStripMenuItem_Click);
             // 
             // lightToolStripMenuItem
             // 
             this.lightToolStripMenuItem.Name = "lightToolStripMenuItem";
             this.lightToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lightToolStripMenuItem.Text = "Light";
-            this.lightToolStripMenuItem.Click += new System.EventHandler(this.lightToolStripMenuItem_Click);
+            this.lightToolStripMenuItem.Click += new System.EventHandler(this.LightToolStripMenuItem_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -288,30 +288,30 @@ namespace WindowsFormsApp1
 
         #endregion
 
-        private System.Windows.Forms.Button StartApps;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button ClearBtn;
-        private System.Windows.Forms.Label AddedAppsList;
-        private System.Windows.Forms.Label AppListPath;
-        private System.Windows.Forms.Label PathLabel;
-        private System.Windows.Forms.MenuStrip MenuBar;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mogusToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem amonToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gitHubToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.Button SelectAppBTN;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.ComboBox GroupSelect;
-        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem;
+        internal System.Windows.Forms.Button StartApps;
+        internal System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.Button ClearBtn;
+        internal System.Windows.Forms.Label AddedAppsList;
+        internal System.Windows.Forms.Label AppListPath;
+        internal System.Windows.Forms.Label PathLabel;
+        internal System.Windows.Forms.MenuStrip MenuBar;
+        internal System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem mogusToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem amonToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
+        internal System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem1;
+        internal System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem gitHubToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        internal System.Windows.Forms.Button SelectAppBTN;
+        internal System.Windows.Forms.OpenFileDialog openFileDialog1;
+        internal System.Windows.Forms.ComboBox GroupSelect;
+        internal System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem;
     }
 }
 

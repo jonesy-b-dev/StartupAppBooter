@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
 using WindowsFormsApp1.Properties;
 
@@ -13,7 +12,7 @@ namespace WindowsFormsApp1
             LoadSettings();
         }
 
-         ~MainUi()
+        ~MainUi()
         {
             Settings.Default.Save();
         }
@@ -71,74 +70,14 @@ namespace WindowsFormsApp1
             MenuStrip.About();
         }
 
-        private void darkToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DarkToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DarkTheme();
+            SettingsManager.DarkTheme(this);
         }
 
-        private void DarkTheme()
+        private void LightToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.MenuBar.Renderer = new DarkThemeRenderer();
-
-            Settings.Default.darkTheme = true;
-            Settings.Default.Save();
-            
-
-            //Menu Strip
-            MenuBar.BackColor = Color.FromArgb(20, 20, 20);
-            MenuBar.ForeColor = Color.White;
-            fileToolStripMenuItem1.BackColor = Color.FromArgb(20, 20, 20);
-            fileToolStripMenuItem1.ForeColor = Color.White;
-            saveToolStripMenuItem1.ForeColor = Color.White;
-            loadToolStripMenuItem.ForeColor = Color.White;
-            gitHubToolStripMenuItem.ForeColor = Color.White;
-            aboutToolStripMenuItem.ForeColor = Color.White;
-            themeToolStripMenuItem.ForeColor = Color.White;
-            darkToolStripMenuItem.ForeColor = Color.White;
-            lightToolStripMenuItem.ForeColor = Color.White;
-
-
-
-            BackColor = Color.FromArgb(50, 50, 50);
-            label1.ForeColor = Color.White;
-            AddedAppsList.ForeColor = Color.White;
-            PathLabel.ForeColor = Color.White;
-            AppListPath.ForeColor = Color.White;
-            SelectAppBTN.BackColor = Color.DimGray;
-
-        }
-
-        private void lightToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LightTheme();
-        }
-
-        private void LightTheme()
-        {
-            this.MenuBar.Renderer = new LightThemeRenderer();
-
-            Settings.Default.darkTheme = false;
-            Settings.Default.Save();
-
-            //Menu Strip
-            MenuBar.BackColor = Color.White;
-            MenuBar.ForeColor = DefaultForeColor;
-            fileToolStripMenuItem1.BackColor = Color.White;
-            fileToolStripMenuItem1.ForeColor = DefaultForeColor;
-            saveToolStripMenuItem1.ForeColor = DefaultForeColor;
-            loadToolStripMenuItem.ForeColor = DefaultForeColor;
-            gitHubToolStripMenuItem.ForeColor = DefaultForeColor;
-            aboutToolStripMenuItem.ForeColor = DefaultForeColor;
-            themeToolStripMenuItem.ForeColor = DefaultForeColor;
-            darkToolStripMenuItem.ForeColor = DefaultForeColor;
-            lightToolStripMenuItem.ForeColor = DefaultForeColor;
-
-            //UI
-            BackColor = DefaultBackColor;
-            label1.ForeColor = DefaultForeColor;
-            AddedAppsList.ForeColor = DefaultForeColor;
-            PathLabel.ForeColor = DefaultForeColor;
-            AppListPath.ForeColor = DefaultForeColor;
+            SettingsManager.LightTheme(this);
         }
 
         private void LoadSettings()
@@ -146,14 +85,12 @@ namespace WindowsFormsApp1
             AddedAppsList.Text = "Loaded";
             if (Settings.Default.darkTheme == true)
             {
-                DarkTheme();
+                SettingsManager.DarkTheme(this);
             }
             else
             {
-                LightTheme();
+                SettingsManager.LightTheme(this);
             }
         }
     }
-
-    
 }
