@@ -53,6 +53,7 @@ namespace WindowsFormsApp1
                 foreach (string line in lines)
                 {
                     AppHandler.appList.Add(line);
+                    AppHandler.appListTemp += line + "\n";
                 }
                 AppListPath.Text = AppHandler.appListTemp;
                 MessageBox.Show("Your apps has been successfully loaded!");
