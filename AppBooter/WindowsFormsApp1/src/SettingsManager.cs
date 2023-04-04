@@ -6,6 +6,19 @@ namespace WindowsFormsApp1
 {
     internal static class SettingsManager
     {
+        public static void LoadSettings(MainUi ui)
+        {
+            if (Settings.Default.darkTheme == true)
+            {
+                DarkTheme(ui);
+            }
+            else
+            {
+                LightTheme(ui);
+            }
+        }
+
+
         public static void DarkTheme(MainUi ui)
         {
             ui.MenuBar.Renderer = new DarkThemeRenderer();

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Configuration;
 using System.Windows.Forms;
 using WindowsFormsApp1.Properties;
 
@@ -17,6 +18,7 @@ namespace WindowsFormsApp1
             Settings.Default.Save();
         }
 
+        #region App UI
         private void SelectAppBTN_Click(object sender, EventArgs e)
         {
             AppHandler.OpenFileDialog(AppListPath);
@@ -33,9 +35,9 @@ namespace WindowsFormsApp1
         {
             AppHandler.ClearAppList(AppListPath);
         }
+        #endregion
 
-        //Menu toolbar
-
+        #region Menu strip
         //Exports bat file
         private void SaveToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -70,9 +72,10 @@ namespace WindowsFormsApp1
             SettingsManager.LightTheme(this);
         }
 
+
+
         private void LoadSettings()
         {
-            AddedAppsList.Text = "Loaded";
             if (Settings.Default.darkTheme == true)
             {
                 SettingsManager.DarkTheme(this);
@@ -81,6 +84,16 @@ namespace WindowsFormsApp1
             {
                 SettingsManager.LightTheme(this);
             }
+        }
+
+        private void GroupSelect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
