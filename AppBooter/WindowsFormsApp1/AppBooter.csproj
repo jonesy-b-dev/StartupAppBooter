@@ -90,4 +90,8 @@
     <Content Include="assets\icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+  <Nullable>enable</Nullable>
+  <LangVersion>8.0</LangVersion>
+</PropertyGroup>
 </Project>

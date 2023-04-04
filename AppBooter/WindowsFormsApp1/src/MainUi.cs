@@ -17,16 +17,6 @@ namespace WindowsFormsApp1
             Settings.Default.Save();
         }
 
-        public void GetSettings()
-        {
-
-        }
-
-        protected override void OnLoad(EventArgs e)
-        {
-
-        }
-
         private void SelectAppBTN_Click(object sender, EventArgs e)
         {
             AppHandler.OpenFileDialog(AppListPath);

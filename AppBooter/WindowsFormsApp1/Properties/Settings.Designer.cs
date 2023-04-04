@@ -34,5 +34,29 @@ namespace WindowsFormsApp1.Properties {
                 this["darkTheme"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("@\"C:\\\"")]
+        public string saveDir {
+            get {
+                return ((string)(this["saveDir"]));
+            }
+            set {
+                this["saveDir"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("@\"C:\\\"")]
+        public string loadDir {
+            get {
+                return ((string)(this["loadDir"]));
+            }
+            set {
+                this["loadDir"] = value;
+            }
+        }
     }
 }

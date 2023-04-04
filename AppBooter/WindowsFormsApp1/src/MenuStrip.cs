@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
+using WindowsFormsApp1.Properties;
 
 namespace WindowsFormsApp1
 {
@@ -14,8 +15,9 @@ namespace WindowsFormsApp1
             {
                 Filter = "Booter Files|*.booter",
                 Title = "Save selected programs",
-                InitialDirectory = @"C:\",
-                FileName = "savedProgramms.booter"
+                InitialDirectory = Settings.Default.saveDir,
+                FileName = "savedProgramms.booter",
+                RestoreDirectory = true
             };
 
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
@@ -23,17 +25,19 @@ namespace WindowsFormsApp1
                 // Open the file for writing
                 using (StreamWriter writer = new StreamWriter(saveFileDialog1.FileName))
                 {
+                    Settings.Default.saveDir = saveFileDialog1.FileName;
+
                     foreach (string app in AppHandler.appList)
                     {
                         writer.WriteLine(app);
                     }
+
 
                     writer.Close();
 
                     MessageBox.Show("Your file has been saved!");
                 }
             }
-
         }
 
         //Loads a txt file and adds all the apps to the app list
@@ -42,12 +46,15 @@ namespace WindowsFormsApp1
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {
                 Title = "Load selected programs",
-                InitialDirectory = @"C:\",
-                Filter = "Booter Files|*.booter"
+                InitialDirectory = Settings.Default.loadDir,
+                Filter = "Booter Files|*.booter",
+                RestoreDirectory = true
             };
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
+                Settings.Default.loadDir = openFileDialog1.FileName;
+
                 AppHandler.ClearAppList(AppListPath);
                 string[] lines = File.ReadAllLines(openFileDialog1.FileName);
                 foreach (string line in lines)
