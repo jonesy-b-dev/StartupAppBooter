@@ -16,5 +16,16 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            //Hides the settings window instead of closing it
+            base.OnFormClosing(e);
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+                this.Hide();
+            }
+        }
     }
 }

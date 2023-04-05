@@ -8,8 +8,8 @@ namespace WindowsFormsApp1
     public partial class MainUi : Form
     {
         //Create the object for the settings window
-        readonly SettingsWindow settingsWindow = new SettingsWindow();
-        
+        SettingsWindow settingsWindow = new SettingsWindow();
+
         public MainUi()
         {
             InitializeComponent();
