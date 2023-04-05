@@ -8,11 +8,12 @@ namespace WindowsFormsApp1
     public partial class MainUi : Form
     {
         //Create the object for the settings window
-        SettingsWindow settingsWindow = new SettingsWindow();
+        SettingsWindow settingsWindow;
 
         public MainUi()
         {
             InitializeComponent();
+            settingsWindow = new SettingsWindow(this);
             SettingsManager.LoadSettings(this, settingsWindow);
         }
 

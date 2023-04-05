@@ -11,10 +11,12 @@ namespace WindowsFormsApp1
             if (Settings.Default.darkTheme == true)
             {
                 DarkTheme(ui, settingUi);
+                settingUi.ThemeCombo.SelectedIndex = 0;
             }
             else
             {
                 LightTheme(ui, settingUi);
+                settingUi.ThemeCombo.SelectedIndex = 1;
             }
         }
 
@@ -49,6 +51,7 @@ namespace WindowsFormsApp1
 
             //Settings UI
             settingUI.BackColor = Color.FromArgb(50, 50, 50);
+            settingUI.ForeColor = Color.White;
 
 
         }
@@ -83,6 +86,7 @@ namespace WindowsFormsApp1
 
             //Settings UI
             settingUI.BackColor = Color.White;
+            settingUI.ForeColor = Color.Black;
         }
     }
 

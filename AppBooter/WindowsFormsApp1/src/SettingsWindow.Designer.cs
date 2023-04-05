@@ -7,7 +7,7 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+            /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -28,21 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsWindow));
+            this.ThemeLabel = new System.Windows.Forms.Label();
+            this.ThemeCombo = new System.Windows.Forms.ComboBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ThemeLabel
+            // 
+            this.ThemeLabel.AutoSize = true;
+            this.ThemeLabel.Location = new System.Drawing.Point(12, 38);
+            this.ThemeLabel.Name = "ThemeLabel";
+            this.ThemeLabel.Size = new System.Drawing.Size(40, 13);
+            this.ThemeLabel.TabIndex = 0;
+            this.ThemeLabel.Text = "Theme";
+            // 
+            // ThemeCombo
+            // 
+            this.ThemeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ThemeCombo.FormattingEnabled = true;
+            this.ThemeCombo.Items.AddRange(new object[] {
+            "Dark",
+            "Light"});
+            this.ThemeCombo.Location = new System.Drawing.Point(15, 54);
+            this.ThemeCombo.MaxDropDownItems = 2;
+            this.ThemeCombo.Name = "ThemeCombo";
+            this.ThemeCombo.Size = new System.Drawing.Size(71, 21);
+            this.ThemeCombo.TabIndex = 1;
+            this.ThemeCombo.SelectedIndexChanged += new System.EventHandler(this.ThemeCombo_SelectedIndexChanged);
             // 
             // SettingsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(399, 450);
+            this.Controls.Add(this.ThemeCombo);
+            this.Controls.Add(this.ThemeLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SettingsWindow";
             this.Text = "Settings";
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        internal System.Windows.Forms.Label ThemeLabel;
+        internal System.Windows.Forms.ComboBox ThemeCombo;
+        internal System.Windows.Forms.BindingSource bindingSource1;
+
     }
 }
