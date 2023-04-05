@@ -48,14 +48,13 @@ namespace WindowsFormsApp1
             this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mogusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.amonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectAppBTN = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.GroupSelect = new System.Windows.Forms.ComboBox();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -200,7 +199,7 @@ namespace WindowsFormsApp1
             this.darkToolStripMenuItem,
             this.lightToolStripMenuItem});
             this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-            this.themeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.themeToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.themeToolStripMenuItem.Text = "Theme";
             // 
             // darkToolStripMenuItem
@@ -216,6 +215,13 @@ namespace WindowsFormsApp1
             this.lightToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
             this.lightToolStripMenuItem.Text = "Light";
             this.lightToolStripMenuItem.Click += new System.EventHandler(this.LightToolStripMenuItem_Click);
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.SettingsToolStripMenuItem_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -252,29 +258,11 @@ namespace WindowsFormsApp1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // GroupSelect
-            // 
-            this.GroupSelect.FormattingEnabled = true;
-            this.GroupSelect.Location = new System.Drawing.Point(25, 544);
-            this.GroupSelect.Name = "GroupSelect";
-            this.GroupSelect.Size = new System.Drawing.Size(121, 21);
-            this.GroupSelect.TabIndex = 22;
-            this.GroupSelect.Text = "Select Group";
-            this.GroupSelect.SelectedIndexChanged += new System.EventHandler(this.GroupSelect_SelectedIndexChanged);
-            // 
-            // settingsToolStripMenuItem
-            // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.settingsToolStripMenuItem.Text = "Settings";
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
-            // 
             // MainUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 577);
-            this.Controls.Add(this.GroupSelect);
             this.Controls.Add(this.SelectAppBTN);
             this.Controls.Add(this.PathLabel);
             this.Controls.Add(this.AppListPath);
@@ -317,12 +305,11 @@ namespace WindowsFormsApp1
         internal System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         internal System.Windows.Forms.Button SelectAppBTN;
         internal System.Windows.Forms.OpenFileDialog openFileDialog1;
-        internal System.Windows.Forms.ComboBox GroupSelect;
         internal System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
     }
 }
 

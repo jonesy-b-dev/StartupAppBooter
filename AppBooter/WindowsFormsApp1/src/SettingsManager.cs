@@ -6,20 +6,20 @@ namespace WindowsFormsApp1
 {
     internal static class SettingsManager
     {
-        public static void LoadSettings(MainUi ui)
+        public static void LoadSettings(MainUi ui, SettingsWindow settingUi)
         {
             if (Settings.Default.darkTheme == true)
             {
-                DarkTheme(ui);
+                DarkTheme(ui, settingUi);
             }
             else
             {
-                LightTheme(ui);
+                LightTheme(ui, settingUi);
             }
         }
 
 
-        public static void DarkTheme(MainUi ui)
+        public static void DarkTheme(MainUi ui, SettingsWindow settingUI)
         {
             ui.MenuBar.Renderer = new DarkThemeRenderer();
 
@@ -38,6 +38,7 @@ namespace WindowsFormsApp1
             ui.themeToolStripMenuItem.ForeColor = Color.White;
             ui.darkToolStripMenuItem.ForeColor = Color.White;
             ui.lightToolStripMenuItem.ForeColor = Color.White;
+            ui.settingsToolStripMenuItem.ForeColor = Color.White;
 
             //General UI
             ui.BackColor = Color.FromArgb(50, 50, 50);
@@ -46,9 +47,13 @@ namespace WindowsFormsApp1
             ui.PathLabel.ForeColor = Color.White;
             ui.AppListPath.ForeColor = Color.White;
 
+            //Settings UI
+            settingUI.BackColor = Color.FromArgb(50, 50, 50);
+
+
         }
 
-        public static void LightTheme(MainUi ui)
+        public static void LightTheme(MainUi ui, SettingsWindow settingUI)
         {
             ui.MenuBar.Renderer = new LightThemeRenderer();
 
@@ -67,6 +72,7 @@ namespace WindowsFormsApp1
             ui.themeToolStripMenuItem.ForeColor = Color.Black;
             ui.darkToolStripMenuItem.ForeColor = Color.Black;
             ui.lightToolStripMenuItem.ForeColor = Color.Black;
+            ui.settingsToolStripMenuItem.ForeColor = Color.Black;
 
             //General UI
             ui.BackColor = Color.FromArgb(240, 240, 240);
@@ -74,6 +80,9 @@ namespace WindowsFormsApp1
             ui.AddedAppsList.ForeColor = Color.Black;
             ui.PathLabel.ForeColor = Color.Black;
             ui.AppListPath.ForeColor = Color.Black;
+
+            //Settings UI
+            settingUI.BackColor = Color.White;
         }
     }
 

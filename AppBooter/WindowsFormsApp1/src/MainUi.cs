@@ -7,10 +7,13 @@ namespace WindowsFormsApp1
 {
     public partial class MainUi : Form
     {
+        //Create the object for the settings window
+        readonly SettingsWindow settingsWindow = new SettingsWindow();
+        
         public MainUi()
         {
             InitializeComponent();
-            LoadSettings();
+            SettingsManager.LoadSettings(this, settingsWindow);
         }
 
         ~MainUi()
@@ -37,7 +40,8 @@ namespace WindowsFormsApp1
         }
         #endregion
 
-        #region Menu strip
+        //Menu Strip
+        #region File
         //Exports bat file
         private void SaveToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -49,7 +53,9 @@ namespace WindowsFormsApp1
         {
             MenuStrip.Load(AppListPath);
         }
+        #endregion
 
+        #region Help
         //Sends user to the GitHub page
         private void GitHubToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -61,39 +67,24 @@ namespace WindowsFormsApp1
         {
             MenuStrip.About();
         }
+        #endregion
 
+        #region Tools
         private void DarkToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SettingsManager.DarkTheme(this);
+            SettingsManager.DarkTheme(this, settingsWindow);
         }
 
         private void LightToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SettingsManager.LightTheme(this);
+            SettingsManager.LightTheme(this, settingsWindow);
         }
 
 
-
-        private void LoadSettings()
+        private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Settings.Default.darkTheme == true)
-            {
-                SettingsManager.DarkTheme(this);
-            }
-            else
-            {
-                SettingsManager.LightTheme(this);
-            }
+            settingsWindow.Show();
         }
-
-        private void GroupSelect_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }
