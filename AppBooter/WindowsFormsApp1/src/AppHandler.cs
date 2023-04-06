@@ -12,7 +12,6 @@ namespace WindowsFormsApp1
         static string selectedApp = "";
         static public string appListTemp;
 
-
         public static List<string> appList = new List<string>();
 
         static public void OpenFileDialog(Label pathField)

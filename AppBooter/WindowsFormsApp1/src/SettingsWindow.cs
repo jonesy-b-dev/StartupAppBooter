@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class SettingsWindow : Form
     {
-        MainUi m_mainUI;
+        readonly MainUi m_mainUI;
 
         public SettingsWindow(MainUi mainUi)
         {
