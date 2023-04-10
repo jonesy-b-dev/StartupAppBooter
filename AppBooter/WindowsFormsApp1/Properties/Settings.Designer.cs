@@ -58,5 +58,29 @@ namespace WindowsFormsApp1.Properties {
                 this["loadDir"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool RestoreDir {
+            get {
+                return ((bool)(this["RestoreDir"]));
+            }
+            set {
+                this["RestoreDir"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("@\"C:\\\"")]
+        public string selectDir {
+            get {
+                return ((string)(this["selectDir"]));
+            }
+            set {
+                this["selectDir"] = value;
+            }
+        }
     }
 }

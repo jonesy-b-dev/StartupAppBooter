@@ -20,7 +20,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-
         //Hides the settings window instead of closing it
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
@@ -42,6 +41,11 @@ namespace WindowsFormsApp1
             {
                 SettingsManager.LightTheme(m_mainUI, this);
             }
+        }
+
+        private void RestoreDirCB_CheckedChanged(object sender, EventArgs e)
+        {
+            SettingsManager.RestoreDir();
         }
     }
 }

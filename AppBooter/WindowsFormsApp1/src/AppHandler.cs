@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using WindowsFormsApp1.Properties;
 
 namespace WindowsFormsApp1
 {
@@ -18,14 +19,24 @@ namespace WindowsFormsApp1
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.InitialDirectory = Settings.Default.selectDir;
                 openFileDialog.Filter = "exe files (*.exe)|*.exe";
-                openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = false;
+                
+                openFileDialog.FilterIndex = 2;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     //Get the path of specified file and add it to the list
+                    if (Settings.Default.RestoreDir)
+                    {
+                        Settings.Default.selectDir = openFileDialog.FileName;
+                    }
+                    else
+                    {
+                        Settings.Default.selectDir = @"C:\";
+                    }
+
                     selectedApp = openFileDialog.FileName;
                     appList.Add(selectedApp);
                     appListTemp += selectedApp + "\n";

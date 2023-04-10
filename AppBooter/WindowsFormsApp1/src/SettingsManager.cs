@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using WindowsFormsApp1.Properties;
 
@@ -18,10 +19,32 @@ namespace WindowsFormsApp1
                 LightTheme(ui, settingUi);
                 settingUi.ThemeCombo.SelectedIndex = 1;
             }
+
+            if (Settings.Default.RestoreDir == true)
+            {
+                settingUi.RestoreDirCB.Checked = true;
+            }
+            else
+            {
+                settingUi.RestoreDirCB.Checked = false;
+            }
         }
 
+        internal static void RestoreDir()
+        {
+            if (Settings.Default.RestoreDir)
+            {
+                Settings.Default.RestoreDir = true;
+            }
+            else
+            {
+                Settings.Default.RestoreDir = false;
+            }
+            
+            Settings.Default.Save();
+        }
 
-        public static void DarkTheme(MainUi ui, SettingsWindow settingUI)
+        internal static void DarkTheme(MainUi ui, SettingsWindow settingUI)
         {
             ui.MenuBar.Renderer = new DarkThemeRenderer();
 
@@ -56,7 +79,7 @@ namespace WindowsFormsApp1
 
         }
 
-        public static void LightTheme(MainUi ui, SettingsWindow settingUI)
+        internal static void LightTheme(MainUi ui, SettingsWindow settingUI)
         {
             ui.MenuBar.Renderer = new LightThemeRenderer();
 
@@ -88,6 +111,7 @@ namespace WindowsFormsApp1
             settingUI.BackColor = Color.White;
             settingUI.ForeColor = Color.Black;
         }
+
     }
 
     //Menu renderer overwrite
