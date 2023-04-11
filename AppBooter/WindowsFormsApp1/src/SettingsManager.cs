@@ -39,6 +39,7 @@ namespace WindowsFormsApp1
             else
             {
                 Settings.Default.RestoreDir = false;
+                Settings.Default.selectDir = @"C:\";
             }
             
             Settings.Default.Save();
@@ -75,8 +76,6 @@ namespace WindowsFormsApp1
             //Settings UI
             settingUI.BackColor = Color.FromArgb(50, 50, 50);
             settingUI.ForeColor = Color.White;
-
-
         }
 
         internal static void LightTheme(MainUi ui, SettingsWindow settingUI)
@@ -111,7 +110,6 @@ namespace WindowsFormsApp1
             settingUI.BackColor = Color.White;
             settingUI.ForeColor = Color.Black;
         }
-
     }
 
     //Menu renderer overwrite
