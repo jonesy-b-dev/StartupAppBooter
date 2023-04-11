@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
 
         private void RestoreDirCB_CheckedChanged(object sender, EventArgs e)
         {
-            SettingsManager.RestoreDir();
+            SettingsManager.RestoreDir(RestoreDirCB);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
                 settingUi.ThemeCombo.SelectedIndex = 1;
             }
 
-            if (Settings.Default.RestoreDir == true)
+            if (Settings.Default.RestoreDir)
             {
                 settingUi.RestoreDirCB.Checked = true;
             }
@@ -30,9 +30,9 @@ namespace WindowsFormsApp1
             }
         }
 
-        internal static void RestoreDir()
+        internal static void RestoreDir(CheckBox restoreDirCB)
         {
-            if (Settings.Default.RestoreDir)
+            if (restoreDirCB.Checked)
             {
                 Settings.Default.RestoreDir = true;
             }
