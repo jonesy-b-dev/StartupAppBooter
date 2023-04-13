@@ -8,7 +8,7 @@ namespace WindowsFormsApp1
     public partial class MainUi : Form
     {
         //Create the object for the settings window
-        SettingsWindow settingsWindow;
+        readonly SettingsWindow settingsWindow;
 
         public MainUi()
         {
@@ -87,5 +87,10 @@ namespace WindowsFormsApp1
             settingsWindow.Show();
         }
         #endregion
+
+        private void AddToGroup_Click(object sender, EventArgs e)
+        {
+            Groups.Items.Add("Group");
+        }
     }
 }

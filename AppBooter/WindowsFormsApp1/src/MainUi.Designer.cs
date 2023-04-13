@@ -55,6 +55,8 @@ namespace WindowsFormsApp1
             this.amonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectAppBTN = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.AddToGroup = new System.Windows.Forms.Button();
+            this.Groups = new System.Windows.Forms.ComboBox();
             this.MenuBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -258,11 +260,32 @@ namespace WindowsFormsApp1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // AddToGroup
+            // 
+            this.AddToGroup.Location = new System.Drawing.Point(74, 472);
+            this.AddToGroup.Name = "AddToGroup";
+            this.AddToGroup.Size = new System.Drawing.Size(97, 37);
+            this.AddToGroup.TabIndex = 22;
+            this.AddToGroup.Text = "Create Group";
+            this.AddToGroup.UseVisualStyleBackColor = true;
+            this.AddToGroup.Click += new System.EventHandler(this.AddToGroup_Click);
+            // 
+            // Groups
+            // 
+            this.Groups.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Groups.FormattingEnabled = true;
+            this.Groups.Location = new System.Drawing.Point(74, 515);
+            this.Groups.Name = "Groups";
+            this.Groups.Size = new System.Drawing.Size(121, 21);
+            this.Groups.TabIndex = 23;
+            // 
             // MainUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 577);
+            this.Controls.Add(this.Groups);
+            this.Controls.Add(this.AddToGroup);
             this.Controls.Add(this.SelectAppBTN);
             this.Controls.Add(this.PathLabel);
             this.Controls.Add(this.AppListPath);
@@ -310,6 +333,8 @@ namespace WindowsFormsApp1
         internal System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.Button AddToGroup;
+        private System.Windows.Forms.ComboBox Groups;
     }
 }
 
