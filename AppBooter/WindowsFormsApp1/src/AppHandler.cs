@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
 using System.Windows.Forms;
 using WindowsFormsApp1.Properties;
 
@@ -22,7 +19,7 @@ namespace WindowsFormsApp1
                 openFileDialog.InitialDirectory = Settings.Default.selectDir;
                 openFileDialog.Filter = "exe files (*.exe)|*.exe";
                 openFileDialog.RestoreDirectory = false;
-                
+
                 openFileDialog.FilterIndex = 2;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)

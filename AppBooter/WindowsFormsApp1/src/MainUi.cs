@@ -90,7 +90,6 @@ namespace WindowsFormsApp1
 
         private void AddToGroup_Click(object sender, EventArgs e)
         {
-            Groups.Items.Add("Group");
         }
     }
 }

@@ -17,5 +17,8 @@
     <Setting Name="selectDir" Type="System.String" Scope="User">
       <Value Profile="(Default)">@"C:\"</Value>
     </Setting>
+    <Setting Name="selectedApps" Type="System.String" Scope="User">
+      <Value Profile="(Default)">""</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

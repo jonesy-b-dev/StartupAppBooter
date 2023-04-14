@@ -82,5 +82,17 @@ namespace WindowsFormsApp1.Properties {
                 this["selectDir"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("\"\"")]
+        public string selectedApps {
+            get {
+                return ((string)(this["selectedApps"]));
+            }
+            set {
+                this["selectedApps"] = value;
+            }
+        }
     }
 }

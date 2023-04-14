@@ -276,7 +276,7 @@ namespace WindowsFormsApp1
             this.Groups.FormattingEnabled = true;
             this.Groups.Location = new System.Drawing.Point(74, 515);
             this.Groups.Name = "Groups";
-            this.Groups.Size = new System.Drawing.Size(121, 21);
+            this.Groups.Size = new System.Drawing.Size(97, 21);
             this.Groups.TabIndex = 23;
             // 
             // MainUi
