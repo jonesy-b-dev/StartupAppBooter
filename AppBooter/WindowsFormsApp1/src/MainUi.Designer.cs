@@ -334,7 +334,7 @@ namespace WindowsFormsApp1
         internal System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.Button AddToGroup;
-        private System.Windows.Forms.ComboBox Groups;
+        internal System.Windows.Forms.ComboBox Groups;
     }
 }
 

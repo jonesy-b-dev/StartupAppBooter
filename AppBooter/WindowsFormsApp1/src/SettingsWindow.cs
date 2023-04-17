@@ -40,5 +40,10 @@ namespace WindowsFormsApp1
         {
             SettingsManager.RestoreDir(RestoreDirCB);
         }
+
+        private void SettingsWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
