@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using WindowsFormsApp;
 using WindowsFormsApp1.Properties;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace WindowsFormsApp1
 {
