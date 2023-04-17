@@ -33,3 +33,4 @@ D:\Code Projects\School\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug
 D:\Code Projects\School\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\AppBooter.pdb
 D:\Code Projects\School\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SettingsWindow.resources
 D:\Code Projects\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SettingsWindow.resources
+D:\Code Projects\School\C#\StartupAppBooter\AppBooter\WindowsFormsApp1\obj\Debug\WindowsFormsApp.AddGroupWindow.resources

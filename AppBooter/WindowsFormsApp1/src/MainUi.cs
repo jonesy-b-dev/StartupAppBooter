@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Net.Configuration;
 using System.Windows.Forms;
+using WindowsFormsApp;
 using WindowsFormsApp1.Properties;
 
 namespace WindowsFormsApp1
@@ -90,6 +90,8 @@ namespace WindowsFormsApp1
 
         private void AddToGroup_Click(object sender, EventArgs e)
         {
+            AddGroupWindow groupBox = new AddGroupWindow();
+            groupBox.ShowDialog();
         }
     }
 }
