@@ -15,7 +15,18 @@ namespace WindowsFormsApp
             this.mainUi = mainUi;
         }
 
-		private void GroupNameTxtBox_TextChanged(object sender, EventArgs e)
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            groupName = "";
+            base.OnFormClosing(e);
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+                this.Hide();
+            }
+        }
+
+        private void GroupNameTxtBox_TextChanged(object sender, EventArgs e)
 		{
             groupName = GroupNameTxtBox.Text;
         }
@@ -23,13 +34,13 @@ namespace WindowsFormsApp
         private void OkBtn_Click(object sender, EventArgs e)
         {
             GroupManger.AddGroup(groupName, mainUi);
-            this.Close();
+            this.Hide();
         }
 
         private void CancelBtn_Click(object sender, EventArgs e)
         {
             groupName = "";
-            this.Close();
+            this.Hide();
         }
     }
 }

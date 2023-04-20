@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Windows.Forms;
+using WindowsFormsApp;
 
 namespace WindowsFormsApp1
 {
     public partial class SettingsWindow : Form
     {
         readonly MainUi m_mainUI;
+        readonly AddGroupWindow m_addGroupWindow;
 
-        public SettingsWindow(MainUi mainUi)
+        public SettingsWindow(MainUi mainUi, AddGroupWindow addGroupWindow)
         {
             m_mainUI = mainUi;
+            m_addGroupWindow = addGroupWindow;
             InitializeComponent();
         }
 
@@ -28,11 +31,11 @@ namespace WindowsFormsApp1
         {
             if (ThemeCombo.SelectedIndex == 0)
             {
-                SettingsManager.DarkTheme(m_mainUI, this);
+                SettingsManager.DarkTheme(m_mainUI, this, m_addGroupWindow);
             }
             else if (ThemeCombo.SelectedIndex == 1)
             {
-                SettingsManager.LightTheme(m_mainUI, this);
+                SettingsManager.LightTheme(m_mainUI, this, m_addGroupWindow);
             }
         }
 

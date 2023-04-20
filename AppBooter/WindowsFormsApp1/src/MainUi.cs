@@ -10,12 +10,14 @@ namespace WindowsFormsApp1
 	{
 		//Create the object for the settings window
 		readonly SettingsWindow settingsWindow;
+		readonly AddGroupWindow addGroupWindow;
 
 		public MainUi()
 		{
 			InitializeComponent();
-			settingsWindow = new SettingsWindow(this);
-			SettingsManager.LoadSettings(this, settingsWindow);
+			settingsWindow = new SettingsWindow(this, addGroupWindow);
+			addGroupWindow = new AddGroupWindow(this);
+			SettingsManager.LoadSettings(this, settingsWindow, addGroupWindow);
 		}
 
 		~MainUi()
@@ -74,12 +76,12 @@ namespace WindowsFormsApp1
 		#region Tools
 		private void DarkToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			SettingsManager.DarkTheme(this, settingsWindow);
+			SettingsManager.DarkTheme(this, settingsWindow, addGroupWindow);
 		}
 
 		private void LightToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			SettingsManager.LightTheme(this, settingsWindow);
+			SettingsManager.LightTheme(this, settingsWindow, addGroupWindow);
 		}
 
 
@@ -91,8 +93,7 @@ namespace WindowsFormsApp1
 
 		private void AddToGroup_Click(object sender, EventArgs e)
 		{
-			AddGroupWindow groupBox = new AddGroupWindow(this);
-            groupBox.ShowDialog();
+			addGroupWindow.Show();
 		}
     }
 }

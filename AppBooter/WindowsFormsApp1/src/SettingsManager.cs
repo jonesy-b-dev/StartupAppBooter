@@ -1,22 +1,23 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using WindowsFormsApp;
 using WindowsFormsApp1.Properties;
 
 namespace WindowsFormsApp1
 {
     internal static class SettingsManager
     {
-        public static void LoadSettings(MainUi ui, SettingsWindow settingUi)
+        public static void LoadSettings(MainUi ui, SettingsWindow settingUi, AddGroupWindow addGroupUi)
         {
             if (Settings.Default.darkTheme == true)
             {
-                DarkTheme(ui, settingUi);
+                DarkTheme(ui, settingUi, addGroupUi);
                 settingUi.ThemeCombo.SelectedIndex = 0;
             }
             else
             {
-                LightTheme(ui, settingUi);
+                LightTheme(ui, settingUi, addGroupUi);
                 settingUi.ThemeCombo.SelectedIndex = 1;
             }
 
@@ -45,7 +46,7 @@ namespace WindowsFormsApp1
             Settings.Default.Save();
         }
 
-        internal static void DarkTheme(MainUi ui, SettingsWindow settingUI)
+        internal static void DarkTheme(MainUi ui, SettingsWindow settingUI, AddGroupWindow addGroupUi)
         {
             ui.MenuBar.Renderer = new DarkThemeRenderer();
 
@@ -76,9 +77,14 @@ namespace WindowsFormsApp1
             //Settings UI
             settingUI.BackColor = Color.FromArgb(50, 50, 50);
             settingUI.ForeColor = Color.White;
+
+            //Add Group UI
+            //addGroupUi.BackColor = Color.FromArgb(50, 50, 50);
+            //addGroupUi.ForeColor = Color.White;
+
         }
 
-        internal static void LightTheme(MainUi ui, SettingsWindow settingUI)
+        internal static void LightTheme(MainUi ui, SettingsWindow settingUI, AddGroupWindow addGroupUi)
         {
             ui.MenuBar.Renderer = new LightThemeRenderer();
 
@@ -109,6 +115,10 @@ namespace WindowsFormsApp1
             //Settings UI
             settingUI.BackColor = Color.White;
             settingUI.ForeColor = Color.Black;
+
+            //Add Group UI
+            //addGroupUi.BackColor = Color.White;
+            //addGroupUi.ForeColor = Color.Black;
         }
     }
 
