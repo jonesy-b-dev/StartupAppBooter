@@ -1,0 +1,490 @@
+[33mcommit 9f308e203eeafb9e4df87fe40d992dd44f1dbbf3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Mon Apr 17 20:37:36 2023 +0200
+
+    Add group name
+
+[33mcommit f37533024ae54ef39c43bb1e1eb0081c6c88c8ab[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Mon Apr 17 13:01:35 2023 +0200
+
+    Add Group UI
+
+[33mcommit 263bd022dcf86bafd9b86d2567ef17d7b9f8e9a1[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Mon Apr 17 12:34:27 2023 +0200
+
+    Added Form for add group
+
+[33mcommit aa4152fd429a08fc332333d1cb8f9df40e66bafe[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Fri Apr 14 15:06:30 2023 +0200
+
+    Experiments with pop up box
+
+[33mcommit 76fe668822f61a68f5cfbacfc7d8ddab8025d62c[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Thu Apr 13 23:29:56 2023 +0200
+
+    Added ui for groups
+
+[33mcommit 8869b7453952675e0ea3947ac2c27ffa58cda457[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Tue Apr 11 15:13:54 2023 +0200
+
+    Added #1
+
+[33mcommit c90ebb303b425b46b38f456090f48700ae2c07e3[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Tue Apr 11 15:07:57 2023 +0200
+
+    Possible fix for restore dir option
+
+[33mcommit 85800b9e39e213e92d83d9a67660582a56559aa8[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Mon Apr 10 14:35:18 2023 +0200
+
+    Restore dir setting(WIP)
+
+[33mcommit c55ec2bc41bf1d203ebbcce63cff5dcffe441150[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Thu Apr 6 12:30:20 2023 +0200
+
+    made MainUI in settings readonly
+
+[33mcommit 59ba6f9dbd210ea0a3457d6d65d6e17c3038b073[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Apr 5 12:42:27 2023 +0200
+
+    Added theme select to settings
+
+[33mcommit 207c2e00aae29ddb1e0a9a52619dff64f2cfcd53[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Apr 5 11:42:47 2023 +0200
+
+    Fixed crash when opening settings +1 times
+
+[33mcommit cca6e7bb53932b9fda3e01a1b0305935eb71e07c[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Apr 5 11:18:13 2023 +0200
+
+    Created settings window
+
+[33mcommit 2848e87e1f137744f332163df2a63e8ca96a3719[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Tue Apr 4 16:34:39 2023 +0200
+
+    Abstracted load settings to settings manager
+
+[33mcommit 9d956eb97c3ae47154e148c0a54cc4895dbe8ffb[m[33m ([m[1;33mtag: v0.1.0[m[33m)[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Tue Apr 4 10:49:45 2023 +0200
+
+    AppBooter now remembers save/load location
+
+[33mcommit 8e7d38092ab02a195cd1d620caa7dc309e4251e3[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Mon Apr 3 14:56:32 2023 +0200
+
+    New file structure
+
+[33mcommit 0b450d687106834c98c4621898ba59694382067c[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Mon Apr 3 14:45:56 2023 +0200
+
+    fixed #2
+
+[33mcommit f5810c082841bd42902a7b8de95922eb34b22f85[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Sat Apr 1 20:38:37 2023 +0200
+
+    Fix no apps in list after loading file
+
+[33mcommit 5b3d429ee85e2bbb1390ad153a3b8e740609a357[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Fri Mar 31 11:58:44 2023 +0200
+
+    Update .suo
+
+[33mcommit 37293f1e67d48c6e0f426623bbb039aed9e22a3c[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Fri Mar 31 11:57:44 2023 +0200
+
+    Abstracted themes to settings class
+
+[33mcommit f259d74d5c8c5c33cd310057e94d28e07f944703[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Fri Mar 31 11:17:11 2023 +0200
+
+    Complete menubar dark mode support
+
+[33mcommit 9b4b95ab39a2075207f76be4d81b1ab1997d9ae5[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Thu Mar 30 16:31:58 2023 +0200
+
+    menu bar Darkmode (wip)
+
+[33mcommit 516e9c0b9fccf736195c2bdf58eff31dba526d21[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Thu Mar 30 12:47:54 2023 +0200
+
+    Added dark theme (no saving)
+
+[33mcommit 43af374a01b74ce3f6ac36c195ee8142a1b152b3[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Mar 29 12:55:14 2023 +0200
+
+    Bug fixes
+    
+    * Fixed no none display after clearing list with apps
+    * Fixed that only 1 app path shows
+
+[33mcommit f75c408f26f2b5c84f68215738a68c3709bd98bb[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Mar 29 12:43:59 2023 +0200
+
+    None will stay when clearing empty app list
+
+[33mcommit 1aba3a252049156bac1ff5cbf1a1a7de680edc81[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Mar 29 12:37:23 2023 +0200
+
+    .booter save file extension
+
+[33mcommit 3b514628453ac06738b6ef434c75a4b0ab79c450[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Mar 29 12:31:37 2023 +0200
+
+    Added saved file loading
+
+[33mcommit eeed4edc48e2cdd9ca2856dc1e333597d56b3d3f[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Mar 29 11:48:23 2023 +0200
+
+    Show message box when saved
+
+[33mcommit 380c32aefa4f5886e1b3e01667fcac0afbecf24a[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Mar 29 11:36:18 2023 +0200
+
+    Save your saved apps
+
+[33mcommit bfec2d5332eeec98958953429b2e22ce6f599fe5[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Mar 29 10:24:05 2023 +0200
+
+    Fixed issue that added the whole app list back after clearing
+
+[33mcommit ad3b9a11924f98b8e4944d705b14d782807acf42[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Fri Jan 27 11:47:43 2023 +0100
+
+    Capital fix
+
+[33mcommit 8aaafc2f7ee8e5bba12fb779f3fccb6234739313[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Thu Dec 15 23:44:10 2022 +0100
+
+    Removed label
+
+[33mcommit 92b5f53f17bad05982f2033ea736d8a7da76e5db[m
+Author: jonesy-b-dev <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Tue Oct 4 10:44:31 2022 +0200
+
+    Fixed "Clear List" + cursor fix
+
+[33mcommit e28dc5d7a409521e68cc5ce91595e8025c7cefe3[m
+Author: jonesy-b-dev <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Tue Oct 4 10:16:04 2022 +0200
+
+    Added apps display in app list again
+
+[33mcommit 782f54de1a1c0504e5d4f36152b56f1a2ef7ddd3[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Tue Oct 4 00:19:40 2022 +0200
+
+    Now using new way to start apps
+    
+    Not using a bat file anymore, this allows for the following.
+    * Using a open file dialog
+    * Use of groups
+    * Simpler code
+
+[33mcommit 83d94f50517e5a3ce06d2bb50c51b416fc542eab[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Tue Oct 4 00:04:13 2022 +0200
+
+    Removed all old code i dont need for the refactor
+
+[33mcommit e6dd02f3e348490805b82f8a5374dec86e61ae2d[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Mon Oct 3 23:53:35 2022 +0200
+
+    Push before i refactor this all
+
+[33mcommit 562f80bed48447b1432ba9d8e2e516746c7e18e1[m
+Author: jonesy-b-dev <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Sep 28 13:00:35 2022 +0200
+
+    Added project grid
+
+[33mcommit 2506f00404058a6afc7d6f9b3858d538459db040[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sun Sep 18 01:08:16 2022 +0200
+
+    Clean up
+
+[33mcommit e2f20139464cd33e800cd3a22483a0885389a40e[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sun Sep 18 00:47:25 2022 +0200
+
+    Moved menu strip functions to new file
+
+[33mcommit 53c26ba1c67212d960a4c6e28d6bc62ca96ce981[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sun Sep 18 00:31:19 2022 +0200
+
+    Added open file dialog (WIP)
+
+[33mcommit 3c76782067113ea86f38f5ce6a7a0ea2d9842cdc[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Sep 14 00:37:57 2022 +0200
+
+    Added documentation
+
+[33mcommit 08141b842f192c16fa7171093b4a7f32c9c90eb3[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Sep 14 00:29:02 2022 +0200
+
+    Merged the 2 add app funcs in 1
+
+[33mcommit 463544e87f63aa26abf873b348f85c1b783715a5[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sun Sep 11 19:41:36 2022 +0200
+
+    Added new file structure
+
+[33mcommit 535927f4b680369be244ac69d1be448a819a354b[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sun Sep 11 16:32:05 2022 +0200
+
+    Renamed Program.cs to MainStart.cs
+
+[33mcommit 8afac0572da810589c725713ae33678c94f70daa[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Sep 7 17:10:15 2022 +0200
+
+    Renamed output name and added icon in file
+
+[33mcommit 38166b7f8dec94f1a0c7b6de877893437491978a[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Sep 7 17:07:26 2022 +0200
+
+    Moved icon location
+
+[33mcommit c73e5f6fc1859db3837317713aee0b5f20749ad8[m
+Author: jonesy-b-dev <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Sep 7 10:10:44 2022 +0200
+
+    Fixed unable to add app when no file was there
+
+[33mcommit 26afbedbb9292fa6daba421acb034dffd32ff2b9[m
+Author: jonesy-b-dev <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Sep 7 10:00:11 2022 +0200
+
+    Removed Bin Dir
+
+[33mcommit eaf00fa8a564fce7bf7fa21ffba040defc8c4689[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Wed Sep 7 09:52:11 2022 +0200
+
+    Added bin dir to the ignore
+
+[33mcommit 50b3caad1bd1aedbdabf78d726007c760b2732f6[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Sep 7 00:11:58 2022 +0200
+
+    Bat file can be found again
+
+[33mcommit a3b481dbd3c4a2cbee81664c1812bccec7635eea[m
+Author: jonesy-b-dev <91885896+JonasDeBruin@users.noreply.github.com>
+Date:   Tue Sep 6 13:04:05 2022 +0200
+
+    Full path name is no longer required
+    
+    .bat file will be created when it does not exist
+
+[33mcommit a791151c56260c9d97f937280777ac3ab4a653c3[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Aug 31 02:09:17 2022 +0200
+
+    Update .suo
+
+[33mcommit 91ea71d40bb12a1d00f6fce48e1377529b3d7eac[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Aug 31 00:55:24 2022 +0200
+
+    Added about section
+
+[33mcommit e6939697ae4574d4b776c60396dcc2de56e01b15[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Thu Aug 25 01:13:06 2022 +0200
+
+    Added link to GitHub page
+
+[33mcommit 48e02a5e147cfdb4881bde04055e9e355a4064be[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Thu Aug 25 01:05:00 2022 +0200
+
+    Added toolbar elements
+
+[33mcommit 61ad80525100de204b5d9ab75905ebe242a0627e[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Thu Aug 25 00:12:15 2022 +0200
+
+    Moved add app to separate function
+    
+    This will allow for adding apps from file later
+
+[33mcommit 799be5e802cc2bef52bcf3df8ecf7d86dd536e22[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Mon Aug 22 19:25:49 2022 +0200
+
+    Window is no longer resizable
+
+[33mcommit 015c1b3a8386a3a98ec93e42d41c9aa51d112847[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Mon Aug 22 19:10:49 2022 +0200
+
+    Added apps will display in app
+
+[33mcommit f6c397597fcdda100a4b98e4fa171e10bef00964[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sun Aug 21 19:03:35 2022 +0200
+
+    Added proper cursors
+
+[33mcommit d7aa6e2c147a115045a313e03c271e8c75388e7b[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sun Aug 21 17:47:56 2022 +0200
+
+    Fixed Window name again
+
+[33mcommit ade76872e1a171ba12e26a5cf06337e06ca2403b[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sun Aug 21 17:47:23 2022 +0200
+
+    Fixed Window name
+
+[33mcommit 9e34b0a92f76144ed1360fe9bf6d8ffde17bad2a[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sun Aug 21 17:38:34 2022 +0200
+
+    You Can Now Add Multiple Apps
+
+[33mcommit 8682ee9b548346eb7671a114b5dc3333be9e0703[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Sat Aug 20 13:11:50 2022 +0200
+
+    Update README.md
+
+[33mcommit fffaa476369d2f3c1c424bee59a338e193d6764b[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Sat Aug 20 11:57:08 2022 +0200
+
+    Update .gitignore
+
+[33mcommit fc6883820cc9b2e7c3a528c35910e4e610567ce3[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Sat Aug 20 11:55:26 2022 +0200
+
+    Create .gitignore
+
+[33mcommit aa5b06628b724735e1fee32ca0aebe3873feb9c0[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sat Aug 20 11:51:59 2022 +0200
+
+    Hidden cmd window / new icon
+    
+    * You no longer see the cmd window flash
+    * Updated app icon
+
+[33mcommit d1fe1af544249d7cd7b634d75f29a0a614c7e2b3[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Fri Aug 19 15:13:38 2022 +0200
+
+    Now works with input
+    
+    * You can now put the path and exe in the text boxes and run that program
+    * You can no longer leave a field open
+
+[33mcommit a0e682dca8a07eaf05728074035f64871dc1d887[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Aug 17 23:53:59 2022 +0200
+
+    Adding text will save to a bat file
+
+[33mcommit 9e39d2be304f92430a5408718548472d408c0fde[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Aug 17 17:37:50 2022 +0200
+
+    Added a few UI elements
+
+[33mcommit 4417a8b6ba007f7b13be97bb9ba0822d96996ff5[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Aug 17 00:35:15 2022 +0200
+
+    Added Icon
+
+[33mcommit 8b6a7dd6967587b79a5b8674bbcb3b71c1913606[m
+Merge: 5036538 e2bcfc9
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Aug 17 00:13:06 2022 +0200
+
+    Merge branch 'main' of https://github.com/jonesy-b-dev/StartupAppBooter
+
+[33mcommit 503653829f63c508a72a727e2fca75f103b7fd3f[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Wed Aug 17 00:12:40 2022 +0200
+
+    Now uses C# form instead of python
+    
+    I'm going to use C# forms now to make the UI and run the bat file to make the app. No more Python
+
+[33mcommit e2bcfc986068bc1ed61af25efcbb1a0440790e61[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Sun Aug 7 10:14:24 2022 +0200
+
+    Update README.md
+
+[33mcommit 60979db8b9ce6c1fb8dbc09956b4a1c7bafbeb3d[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Mon Jul 25 11:31:07 2022 +0200
+
+    Run from py file
+
+[33mcommit 418a81356906e9a24e5212a354841deddbff9140[m
+Author: Jonas de Bruin <59418915+jonesy-b-dev@users.noreply.github.com>
+Date:   Sat Jul 23 17:53:16 2022 +0200
+
+    Create README.md
+
+[33mcommit 5c7700d720f35a5f01f4e8a137392de62e5c0273[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sat Jul 23 12:33:15 2022 +0200
+
+    Now works from bat
+    
+    Everything works if  you run the shortvut now
+
+[33mcommit 75cf1a3fbccd5f57069f310e08283d150b226806[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sat Jul 23 01:12:50 2022 +0200
+
+    why no workie
+
+[33mcommit 1ce505af1a81b83cbf6889ff0865b6ccc1a233b6[m
+Author: Jonas de Bruin <jonasdebruin05@gmail.com>
+Date:   Sat Jul 23 00:09:06 2022 +0200
+
+    Initial commit

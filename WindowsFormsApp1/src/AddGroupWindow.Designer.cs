@@ -29,11 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddGroupWindow));
+            this.GroupNameTxtBox = new System.Windows.Forms.TextBox();
             this.OkBtn = new System.Windows.Forms.Button();
             this.CancelBtn = new System.Windows.Forms.Button();
             this.GroupName = new System.Windows.Forms.Label();
-            this.GroupNameTxtBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // GroupNameTxtBox
+            // 
+            this.GroupNameTxtBox.Location = new System.Drawing.Point(168, 17);
+            this.GroupNameTxtBox.Name = "GroupNameTxtBox";
+            this.GroupNameTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.GroupNameTxtBox.TabIndex = 3;
+            this.GroupNameTxtBox.TextChanged += new System.EventHandler(this.GroupNameTxtBox_TextChanged);
             // 
             // OkBtn
             // 
@@ -64,14 +72,6 @@
             this.GroupName.TabIndex = 2;
             this.GroupName.Text = "Group Name";
             // 
-            // GroupNameTxtBox
-            // 
-            this.GroupNameTxtBox.Location = new System.Drawing.Point(168, 17);
-            this.GroupNameTxtBox.Name = "GroupNameTxtBox";
-            this.GroupNameTxtBox.Size = new System.Drawing.Size(100, 20);
-            this.GroupNameTxtBox.TabIndex = 3;
-            this.GroupNameTxtBox.TextChanged += new System.EventHandler(this.GroupNameTxtBox_TextChanged);
-            // 
             // AddGroupWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,9 +92,9 @@
 
         #endregion
 
+        private System.Windows.Forms.TextBox GroupNameTxtBox;
         private System.Windows.Forms.Button OkBtn;
         private System.Windows.Forms.Button CancelBtn;
         private System.Windows.Forms.Label GroupName;
-        private System.Windows.Forms.TextBox GroupNameTxtBox;
     }
 }
