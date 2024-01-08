@@ -73,7 +73,7 @@ namespace WindowsFormsApp1
 
         static public void About()
         {
-            MessageBox.Show("AppBooter \nVersion: 0.0.2 \nCopyright © 2022- 2023 Jonas de Bruin \n\nAppBooter is a app created by Jonas de Bruin and used to boot custom apps in bulk at any time. Currently in early development.");
+            MessageBox.Show("AppBooter \nVersion: 0.0.2 \nCopyright © 2022- 2024 Jonas de Bruin \n\nAppBooter is a app created by Jonas de Bruin and used to boot custom apps in bulk at any time. Currently in early development.");
         }
     }
 }
